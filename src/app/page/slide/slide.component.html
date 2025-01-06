@@ -1,0 +1,61 @@
+<div class="flex justify-center items-center min-h-screen bg-gray-100">
+  <div class="w-full max-w-2xl overflow-hidden relative">
+    <!-- Radio Buttons (Hidden) -->
+    <input type="radio" name="slider" id="slide1" class="hidden peer/slide1" checked>
+    <input type="radio" name="slider" id="slide2" class="hidden peer/slide2">
+    <input type="radio" name="slider" id="slide3" class="hidden peer/slide3">
+
+    <!-- Slides Container -->
+    <div id="slides" class="flex w-full transition-transform duration-500 ease-in-out
+                peer-checked/slide1:translate-x-0
+                peer-checked/slide2:-translate-x-full
+                peer-checked/slide3:-translate-x-[200%]">
+      <div class="slide pb-16 min-w-full bg-blue-500 text-white text-center">
+        <h2 class="title text-blue-500">Slide 1 Title</h2>
+        <div class="content p-6">
+          <h3 class="subtitle">Slide 1 subtitle</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at viverra nibh. Praesent a porta
+            enim, in rutrum metus. Quisque pretium sagittis consectetur. Integer ornare eleifend urna sed consectetur.
+            Suspendisse condimentum ut dolor in euismod.
+          </p>
+        </div>
+      </div>
+      <div class="slide bg-green-500">
+        <h2 class="title text-green-500">Slide 2 Title</h2>
+        <div class="content p-6">
+          <h3 class="subtitle">Slide 2 subtitle</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at viverra nibh. Praesent a porta
+            enim, in rutrum metus. Quisque pretium sagittis consectetur. Integer ornare eleifend urna sed consectetur.
+            Suspendisse condimentum ut dolor in euismod.
+          </p>
+        </div>
+      </div>
+      <div class="slide bg-red-500">
+        <h2 class="title text-red-500">Slide 3 Title</h2>
+        <div class="content p-6">
+          <h3 class="subtitle">Slide 3 subtitle</h3>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at viverra nibh. Praesent a porta
+            enim, in rutrum metus. Quisque pretium sagittis consectetur. Integer ornare eleifend urna sed consectetur.
+            Suspendisse condimentum ut dolor in euismod.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <label for="slide1"
+      class="bullet p-1 -translate-x-full peer-checked/slide1:font-bold peer-checked/slide1:scale-125">
+      <span class="bg-white w-full h-full rounded-full">1</span>
+    </label>
+    <label for="slide2" class="bullet p-1 peer-checked/slide2:font-bold peer-checked/slide2:scale-125">
+      <span class="bg-white w-full h-full rounded-full">2</span>
+    </label>
+    <label for="slide3" class="bullet p-1 translate-x-full peer-checked/slide3:font-bold peer-checked/slide3:scale-125">
+      <span class="bg-white w-full h-full rounded-full">3</span>
+    </label>
+
+  </div>
+  </div>
