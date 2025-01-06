@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="navbar pb-12">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <!-- Contenu -->
+  <div class="couverture">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Texte -->
+      <div class="text-white px-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Bienvenue sur mon portfolio
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+          Personnalisez cette section avec vos informations.
+        </p>
+        <button
+          class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded shadow transition duration-300 my-20 py-4" >
+          plus d'info
+        </button>
+      </div>
+      <!-- Image -->
+      <div class="z-5 px-6">
+        <img [src]="imagePath" alt="Portrait"
+          class="rounded-full w-96 border-4 img-fluid shadow-lg transform hover:scale-105 transition duration-500">
+      </div>
+    </div>
+  </div>
+  <div class="about d:flex row justify-center content-center my-2 ">
+    <app-profile></app-profile>
+  </div>
+</div>
