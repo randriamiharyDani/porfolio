@@ -1,0 +1,30 @@
+.container
+{
+  display: inline-block;
+}
+.texte{
+  // font-size: 5em;
+  letter-spacing: 5px;
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation :
+  typing 2s steps(5),
+  cursor .6s step-end infinite alternate;
+}
+//cursor blinking
+
+@keyframes cursor
+{
+ 50%{ border-color: transparent }
+}
+
+// tiping effect
+
+@keyframes typing
+{
+  from { width: 0 }
+  to { width: 100% }
+}
