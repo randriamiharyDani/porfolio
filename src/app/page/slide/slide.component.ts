@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './slide.component.scss'
 })
 export class SlideComponent {
-
+  slideTexte = "En cours de recherche d'un travail";
 }

@@ -28,3 +28,10 @@
   from { width: 0 }
   to { width: 100% }
 }
+
+.slide{
+  background-image: url('/assets/cta01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-position 0.5s;
+}
