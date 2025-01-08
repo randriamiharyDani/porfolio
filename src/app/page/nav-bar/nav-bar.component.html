@@ -1,21 +1,29 @@
-<nav class="bg-gray-400 w-full fixed z-10 p-4">
-  <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
-    <div class="text-white font-bold text-3xl mb-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer porfolio">Porfolio
+<nav class="bg-gray-400 bg-opacity-95 w-full fixed z-10 p-4 transition-all duration-300">
+  <div class="container mx-auto flex flex-col lg:flex-row justify-around items-center">
+    <div class="text-white font-bold text-3xl mb-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer porfolio px-5">Porfolio
     </div>
 
-    <div class="lg:hidden">
+    <!-- <div class="lg:hidden">
       <button class="text-white focus:outline-none">
         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
+    </div> -->
+
+    <div class=" nav">
+      <a routerLink="/" class="lien">Accueil</a>
+      <a routerLink="profil" class="lien" >Profil</a>
+      <a routerLink="/Compétences" class="lien">Compétences</a>
+      <a routerLink="/Contact" class="lien">Contact</a>
+      <a href="" class=" px-4 py-2 hover:text-orange-600 w-16 lg:hidden"><img src="/assets/menu1.png" alt="" srcset=""></a>
+      <div class="animation start-home"></div>
     </div>
 
-    <div class="lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl">
-      <a routerLink="/"  routerLinkActive="text-orange-600" class="text-white  px-4 py-2 hover:text-orange-600 ">Accueil</a>
-      <a routerLink="profil" class="text-white  px-4 py-2  hover:text-orange-600" >Profil</a>
-      <a routerLink="/Compétences" class="text-white  px-4 py-2  hover:text-orange-600">Compétences</a>
-      <a routerLink="/Contact" class="text-white  px-4 py-2  hover:text-orange-600">Contact</a>
+    <div class="lg:flex flex-col lg:flex-row lg:space-x-1 lg:mt-0 mt-4 flex flex-col items-center text-xl max-lg:flex-row">
+      <a href="" class=" px-4 py-2 hover:bg-slate-300 hover:rounded-full w-14"><img src="/assets/facebook.png" alt="" srcset=""></a>
+      <a href="" class="text-white  px-4 py-2  hover:bg-slate-300 hover:rounded-full w-14"><img src="/assets/github.png" alt="" srcset=""></a>
+      <a href="" class="text-white  px-4 py-2  hover:bg-slate-300 hover:rounded-full w-14"><img src="/assets/linkidin.png" alt="" srcset=""></a>
     </div>
   </div>
 

@@ -1,6 +1,13 @@
 .porfolio{
-// font-size: 14vh;
-color: #252839;
+color: transparent;
 -webkit-text-stroke: 0.3vh white;
 text-transform: uppercase;
+}
+.lien{
+  @apply text-white  px-4 py-2 hover:bg-orange-600 hover:rounded-2xl hover:px-3.5 w-full text-center;
+}
+
+.nav{
+  @apply lg:flex flex-col lg:flex-row lg:space-x-4 lg:mt-0 mt-4 flex flex-col
+  items-center text-lg p-2 border bg-gray-500 rounded-2xl;
 }
