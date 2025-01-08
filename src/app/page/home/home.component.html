@@ -2,7 +2,6 @@
   <div class="navbar ">
     <app-nav-bar></app-nav-bar>
   </div>
-  <!-- Contenu -->
   <div class="couverture">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <!-- Texte -->
@@ -14,9 +13,10 @@
         <p class="text-lg md:text-xl mt-10">
           Personnalisez cette section avec vos informations.
         </p>
+
         <button
           class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded shadow transition duration-300 my-20 py-4">
-          plus d'info
+         <a href="#profil">plus d'info</a>
         </button>
       </div>
       <!-- Image -->
@@ -27,21 +27,18 @@
     </div>
   </div>
 
-  <div class="slide">
-    <app-slide></app-slide>
-  </div>
   <!-- profile -->
   <div class="about d:flex row justify-center content-center ">
     <app-profile></app-profile>
   </div>
-
-
-
   <!-- competance -->
-  <div class="competence d:flex row justify-center content-center">
+  <div id="Compétences" class="competence d:flex row justify-center content-center">
     <app-competence></app-competence>
   </div>
-
+  <!-- slide -->
+  <div class="slide">
+    <app-slide></app-slide>
+  </div>
   <!--footer -->
   <div class="footer">
     <app-footer></app-footer>
