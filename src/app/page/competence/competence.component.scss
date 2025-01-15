@@ -10,7 +10,15 @@ h3
 }
 .title{
   text-transform: uppercase;
-  font-size: 45px;
+  font-size: 40px;
   -webkit-text-stroke: 2px #0ef;
   color: transparent;
+}
+
+.lien {
+  transition: color 0.3s ease;
+}
+
+.lien:hover {
+  text-decoration: underline;
 }

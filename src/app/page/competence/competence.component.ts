@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './competence.component.scss'
 })
 export class CompetenceComponent {
+  
 
 }
