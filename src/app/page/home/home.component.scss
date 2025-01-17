@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    // color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     background-position: center;
@@ -15,6 +15,7 @@
     overflow: hidden;
     z-index: -1;
   }
+
   .img-fluid {
     max-width: 60%;
     max-height: 60%;
@@ -43,38 +44,49 @@
     }
   }
 
-  .welcome{
+  .welcome {
     width: 100%;
   }
-  .welcome span{
-    color :white;
-    text-transform: uppercase;
-    display: block;
-  }
-  .text1{
-    font-size: 60px;
-    color: white;
+
+  .text1 {
+    font-size: 25px;
     font-weight: 700px;
     letter-spacing: 2px;
     margin-bottom: 10px;
     position: relative;
     animation: text 3s 1;
   }
-  .text2{
+
+  .text2 {
     font-size: 30px;
     color: #6ab04c;
   }
-@keyframes text{
-0%{
-  letter-spacing: 5px;
-}
-25%{
-  letter-spacing: 8px;
-}
-50%{
-  letter-spacing: 6px;
-}
-85%{
-  letter-spacing: 4px;
-}
-}
+
+  @keyframes text {
+    0% {
+      letter-spacing: 5px;
+    }
+
+    25% {
+      letter-spacing: 8px;
+    }
+
+    50% {
+      letter-spacing: 6px;
+    }
+
+    85% {
+      letter-spacing: 4px;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: white
+  }
+
+  .nom {
+    @apply text-[55px] text-blue-600 border border-cyan-300 border-x-8 px-5 bg-white bg-opacity-50 m-5 rounded-3xl shadow-lg transition-transform duration-300 scale-105 hover:shadow-xl;
+  }
