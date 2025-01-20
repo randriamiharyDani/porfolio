@@ -5,25 +5,14 @@ import { CompetenceComponent } from "../competence/competence.component";
 import { SlideComponent } from "../slide/slide.component";
 import { FooterComponent } from '../footer/footer.component';
 import gsap from "gsap";
+import { AccueilComponent } from "../accueil/accueil.component";
 
 @Component({
   selector: 'app-home',
-  imports: [NavBarComponent, ProfileComponent, CompetenceComponent, SlideComponent,FooterComponent],
+  imports: [NavBarComponent, ProfileComponent, CompetenceComponent, SlideComponent, FooterComponent, AccueilComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit{
-  imagePath = '/assets/profile.jpg';
+export class HomeComponent  {
 
-   ngOnInit() {
-    // Animation GSAP
-    gsap.to(".img-fluid", {
-      duration: 2,
-      transition:3,
-      x: 250,
-      // y: 30,
-      opacity: 0.9,
-      ease: "power2.in"
-    });
-  }
 }

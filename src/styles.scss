@@ -7,3 +7,16 @@ html
 {
   scroll-behavior: smooth;
 }
+*{
+  box-sizing: border-box;
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: font-size 0.5s ease;
+  transition: border 0.5s ease;
+  transition: opacity 0.5s ease;
+  transition: margin 0.5s ease;
+  transition: padding 0.5s ease;
+  transition: border-radius 0.5s ease;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
