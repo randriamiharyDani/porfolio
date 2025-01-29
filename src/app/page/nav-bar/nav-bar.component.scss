@@ -4,9 +4,5 @@ color: transparent;
 text-transform: uppercase;
 }
 .lien{
-  @apply text-white  px-4 py-2 hover:bg-cyan-400 hover:rounded-2xl hover:px-3.5 w-full text-center;
-}
-
-.nav{
-  @apply  text-lg p-2 border bg-gray-500 rounded-2xl;
+  @apply text-white px-4 py-2 hover:bg-cyan-400 hover:rounded-2xl w-full text-center;
 }
