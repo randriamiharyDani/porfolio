@@ -35,3 +35,22 @@
   background-repeat: no-repeat;
   transition: background-position 0.5s;
 }
+// responsive
+@media screen and (max-width: 600px) {
+  .texte {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+     text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .container {
+    display: block;
+
+    max-width: 100%;
+    padding: 10px;
+  }
+}
