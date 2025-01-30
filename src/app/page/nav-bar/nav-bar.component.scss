@@ -6,3 +6,11 @@ text-transform: uppercase;
 .lien{
   @apply text-white px-4 py-2 hover:bg-cyan-400 hover:rounded-2xl w-full text-center;
 }
+
+
+@media (min-width: 600px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

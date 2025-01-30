@@ -1,24 +1,3 @@
-<!-- <nav class="bg-gray-400 bg-opacity-95 w-full fixed z-10 p-4 transition-all duration-300">
-  <div class="container mx-auto flex flex-col lg:flex-row justify-around items-center">
-    <div class="text-white font-bold text-3xl mb-4 lg:mb-0 hover:text-orange-600 hover:cursor-pointer porfolio px-5">Porfolio
-    </div>
-    <div class=" nav">
-      <a href="/" class="lien">Accueil</a>
-      <a href="#profil" class="lien" >Profil</a>
-      <a href="#Compétences" class="lien">Compétences</a>
-      <a href="#Contact" class="lien">Contact</a>
-      <a href="" class=" px-4 py-2 hover:text-orange-600 w-16 lg:hidden"><img src="/assets/menu1.png" alt="" srcset=""></a>
-    </div>
-
-    <div class="lg:flex flex-col lg:flex-row lg:space-x-1 lg:mt-0 mt-4 flex flex-col items-center text-xl max-lg:flex-row">
-      <a href="" class=" px-4 py-2 hover:bg-slate-300 hover:rounded-full w-14"><img src="/assets/facebook.png" alt="" srcset=""></a>
-      <a href="" class="text-white  px-4 py-2  hover:bg-slate-300 hover:rounded-full w-14"><img src="/assets/github.png" alt="" srcset=""></a>
-      <a href="" class="text-white  px-4 py-2  hover:bg-slate-300 hover:rounded-full w-14"><img src="/assets/linkidin.png" alt="" srcset=""></a>
-    </div>
-  </div>
-
-</nav> -->
-
 <nav class="bg-gray-400 bg-opacity-95 w-full fixed z-10 p-4 transition-all duration-300">
   <div class="container mx-auto flex flex-wrap justify-between items-center">
     <!-- Logo -->
@@ -26,19 +5,18 @@
       Portfolio
     </div>
 
-    <!-- Menu Hamburger (visible en mobile) -->
 
-    <button id="menu-toggle" class="text-white lg:hidden block focus:outline-none">
-      <img src="/assets/menu1.png" alt="Menu" class="w-8 h-8">
-    </button>
-    
-    <div id="menu" class="nav hidden lg:flex flex-col lg:flex-row lg:space-x-4 items-center lg:mt-0 mt-4">
+
+    <div id="menu" [ngClass]="{'hidden': !menuOpen, 'flex': menuOpen}"  class="nav flex flex-col lg:flex lg:flex-row lg:space-x-4 items-center lg:mt-0 mt-4 lg:justify-end xs:w-full" >
       <a href="#accueil" class="lien px-4 py-2 hover:text-orange-600">Accueil</a>
       <a href="#profil" class="lien px-4 py-2 hover:text-orange-600">Profil</a>
       <a href="#Compétences" class="lien px-4 py-2 hover:text-orange-600">Compétences</a>
+      <a href="#project" class="lien px-4 py-2 hover:text-orange-600">Projet</a>
       <a href="#Contact" class="lien px-4 py-2 hover:text-orange-600">Contact</a>
     </div>
-
+    <button (click)="toggleMenu()" class="text-white lg:hidden block focus:outline-none">
+      <img src="/assets/free_icon_1.svg" alt="Menu" class="w-8 h-8">
+    </button>
 
   </div>
 </nav>

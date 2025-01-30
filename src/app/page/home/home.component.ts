@@ -6,10 +6,11 @@ import { SlideComponent } from "../slide/slide.component";
 import { FooterComponent } from '../footer/footer.component';
 import gsap from "gsap";
 import { AccueilComponent } from "../accueil/accueil.component";
+import { ProjectComponent } from "../project/project.component";
 
 @Component({
   selector: 'app-home',
-  imports: [NavBarComponent, ProfileComponent, CompetenceComponent, SlideComponent, FooterComponent, AccueilComponent],
+  imports: [NavBarComponent, ProfileComponent, CompetenceComponent, SlideComponent, FooterComponent, AccueilComponent, ProjectComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
