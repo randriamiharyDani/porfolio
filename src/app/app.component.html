@@ -1,6 +1,8 @@
 
 
+
 <div *ngIf="loading" class="flex justify-center items-center h-screen">
+
   <!-- <div class="loader"></div> -->
   <div class="flex-col gap-4 w-full flex items-center justify-center">
     <div
@@ -14,6 +16,7 @@
 </div>
 
 <div [ngClass]="{'hidden': loading}">
+
 <router-outlet />
 
 </div>

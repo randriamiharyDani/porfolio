@@ -1,0 +1,30 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "SKILLS": "Skills",
+    "CONTACT": "Contact"
+  },
+  "PROFIL" :{
+    "PROFILE" : "Profil",
+    "ABOUT" : "about",
+    "ABOUT_ME" : "me",
+    "PARAGRAPHE" : "I am a junior web developer passionate about technology and software development. Specialized in Angular and Laravel, I have acquired solid skills in creating modern and dynamic web applications. Although I am at the beginning of my career, I have a great desire to learn and contribute to concrete projects. My goal is to perfect my technical skills while bringing added value to the teams with which I collaborate."
+  },
+   "ACCUEIL" :{
+    "SALUET" : "Hello, I am",
+    "PARCOURS" : "Junior fullstack web developer",
+    "BUTTOM" : "more info"
+  },
+  "SKILL" :{
+    "SKILL1" : "ski",
+    "SKILL2" : "lls",
+    "SKILL_TECHNICAL" : "Technical skills",
+    "SKILL_PREFOTIONNEL" : "Professional skills",
+    "CREATIVITY" : "Creativity",
+    "COMMUNICATION" : "Communication",
+    "TROUBLESHOOTING" : "problem-solving",
+    "TEAMWORK" : "Teamwork"
+
+  }
+}

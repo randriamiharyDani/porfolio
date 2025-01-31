@@ -1,4 +1,16 @@
 <div class="container-fluid">
+
+  <div class="translate w-full h-7 bg-slate-600 fixed z-40 mt-0">
+      <div class="traduction flex flex-row-reverse mx-2">
+        <button
+          class="language-btn bg-green-500 text-white px-2 mx-1 py-1 my-1 text-xs rounded-lg font-semibold transition-transform transform hover:scale-105 hover:bg-green-600"
+          (click)="switchLanguage('en')">En</button>
+        <button
+          class="language-btn bg-red-500 text-white px-2 py-1 my-1 text-xs rounded-lg font-semibold transition-transform transform hover:scale-105 hover:bg-red-600 "
+          (click)="switchLanguage('fr')">Fr</button>
+      </div>
+  </div>
+
   <div class="navbar ">
     <app-nav-bar></app-nav-bar>
   </div>

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import gsap from "gsap";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-accueil',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.scss'
 })

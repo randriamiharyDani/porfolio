@@ -1,4 +1,4 @@
-<nav class="bg-gray-400 bg-opacity-95 w-full fixed z-10 p-4 transition-all duration-300">
+<nav class="bg-gray-400 bg-opacity-95 w-full fixed z-10 p-4 transition-all duration-300 mt-7">
   <div class="container mx-auto flex flex-wrap justify-between items-center">
     <!-- Logo -->
     <div class="text-white font-bold text-3xl hover:text-orange-600 hover:cursor-pointer porfolio px-5">
@@ -7,16 +7,19 @@
 
 
 
+
     <div id="menu" [ngClass]="{'hidden': !menuOpen, 'flex': menuOpen}"  class="nav flex flex-col lg:flex lg:flex-row lg:space-x-4 items-center lg:mt-0 mt-4 lg:justify-end xs:w-full" >
-      <a href="#accueil" class="lien px-4 py-2 hover:text-orange-600">Accueil</a>
-      <a href="#profil" class="lien px-4 py-2 hover:text-orange-600">Profil</a>
-      <a href="#Compétences" class="lien px-4 py-2 hover:text-orange-600">Compétences</a>
+      <a href="#accueil" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.HOME' | translate }}</a>
+      <a href="#profil" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.ABOUT' | translate }}</a>
+      <a href="#Compétences" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.SKILLS' | translate }}</a>
       <!-- <a href="#project" class="lien px-4 py-2 hover:text-orange-600">Projet</a> -->
-      <a href="#Contact" class="lien px-4 py-2 hover:text-orange-600">Contact</a>
+      <a href="#Contact" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.CONTACT' | translate }}</a>
+
     </div>
     <button (click)="toggleMenu()" class="text-white lg:hidden block focus:outline-none">
       <img src="/assets/free_icon_1.svg" alt="Menu" class="w-8 h-8">
     </button>
+
 
   </div>
 </nav>

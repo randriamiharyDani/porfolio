@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-root',
   standalone: true, // Standalone Component
@@ -10,10 +12,12 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit {
+export class AppComponent  implements OnInit{
   title = 'dani-pf';
 
-  loading = true;
+
+
+   loading = true;
 
   ngOnInit() {
     setTimeout(() => {
