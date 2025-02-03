@@ -25,6 +25,12 @@
     "COMMUNICATION" : "Communication",
     "TROUBLESHOOTING" : "problem-solving",
     "TEAMWORK" : "Teamwork"
-
+  },
+  "TRAINNING" :{
+    "TRAINING1" : "Trai",
+    "TRAINING2" : "ning",
+    "EDUCATION" : "Education",
+    "EXPERIENCE" : "Experience",
+    "PROGRESS" : "In progress"
   }
 }
