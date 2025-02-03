@@ -48,7 +48,14 @@
 
             <!-- {{form.value | json}} -->
           <span *ngIf="!isLoading">Envoyer</span>
-          <span *ngIf="isLoading" class="spinner"></span>
+          <section *ngIf="isLoading" class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </section>
+
           </button>
 
         </form>
