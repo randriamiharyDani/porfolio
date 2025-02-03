@@ -17,6 +17,7 @@ export class FooterComponent implements OnInit {
   address = 'Lot II T5 CA Betongolo';
 
   form : FormGroup ;
+  isLoading = false;
 
  constructor(public fb: FormBuilder) {
  this.form  = this.fb.group({
@@ -32,6 +33,7 @@ export class FooterComponent implements OnInit {
   async send(){
 
     emailjs.init('oz3QNyrVTskUO-8qx') ;
+     this.isLoading = true;
     try {
         let response = await emailjs.send("service_n5mi0xh","template_kt0yqkg",{
         from_name: this.form.value.nom,
@@ -46,6 +48,8 @@ export class FooterComponent implements OnInit {
     }
     catch(err) {
         console.log('Erreur lors de l\'envoi du message : ', err);
+    }finally {
+        this.isLoading = false; // Désactiver le chargement après l'opération
     }
   }
 ngOnInit(): void {}
