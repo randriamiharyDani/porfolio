@@ -31,6 +31,28 @@
     "TRAINING2" : "ning",
     "EDUCATION" : "Education",
     "EXPERIENCE" : "Experience",
-    "PROGRESS" : "In progress"
+    "PROGRESS" : "In progress",
+    "MASTER2" : "Currently in the second year of the Master's cycle, with a dissertation currently being written. The defense is planned soon.",
+    "MASTER1" : "First year of the Master cycle, deepening skills in software development and project management.",
+    "LICENCE" : "Specialized in databases and software engineering, obtained in 2022 after three years of study at CNTEMAD Ankadifotsy Antananarivo University.",
+    "2EME_ANNEE" : "Continuation of the degree in computer science at CNTEMAD Ankadifotsy Antananarivo University.",
+    "BACC" : "Diploma obtained in 2018.",
+    "TASK" :"Task",
+    "TASK_DESC0" :"From August 12 to today",
+    "TASK_DESC1" :"Development of a tax management web application for the urban municipality of Antananarivo using the Angular framework for the front-end and Laravel for the back-end APIs",
+    "DATEGIZ" : "September - December 2024",
+    "TASK_DESC2" :"Development of a tax management web application for the urban municipality of Antananarivo using the Angular framework for the front-end and Laravel for the back-end APIs",
+
+    "NIRINFO" : "At Nir'info",
+    "DATE_NIRINFO" : "February - March 2024",
+    "TASK_DESC3" :"carrying out web application development with React Native and CodeIgniter 3 API",
+
+
+    "CENTIC" : "At CenTIC Mada",
+    "CERTIFICAT" : "Certification: Obtaining certification for a bachelor’s study internship",
+    "DATE_CENTIC" : "2021 - 2022",
+    "TASK_DESC4" :"Development of an IT asset management application with CodeIgniter"
+
+
   }
 }

@@ -31,6 +31,27 @@
     "TRAINING2" : "tion",
     "EDUCATION" : "Education",
     "EXPERIENCE" : "Experience",
-     "PROGRESS" : "En cours"
+     "PROGRESS" : "En cours",
+    "MASTER2" : "Actuellement en deuxième année du cycle Master, avec un mémoire en cours de rédaction. La soutenance est prévue prochainement.",
+    "MASTER1": "Première année du cycle Master, approfondissant les compétences en développement logiciel et gestion de projets.",
+    "LICENCE" : "Spécialisée en bases de données et génie logiciel, obtenue en 2022 après trois ans d'études à l'université CNTEMAD Ankadifotsy Antananarivo.",
+     "2EME_ANNEE" : "Poursuite de la licence en informatique à l'université CNTEMAD Ankadifotsy Antananarivo.",
+      "BACC" : "Diplôme obtenu en 2018 .",
+      "TASK" :"Tâche",
+      "TASK_DESC0" : "Du 12 août à aujourd'hui",
+      "TASK_DESC1" : "Développement d'une application web de gestion des impôts pour la commune urbaine d'Antananarivo en utilisant le framework Angular pour le front-end et Laravel pour les API back-end.",
+      "DATEGIZ" : "Septembre - Décembre 2024",
+      "TASK_DESC2" : "Développement d'une application web de gestion des impôts pour la commune urbaine d'Antananarivo en utilisant le framework Angular pour le front-end et Laravel pour les API back-end.",
+
+       "NIRINFO" : "Chez Nir'info",
+    "DATE_NIRINFO" : "Fevrier - Mars 2024",
+    "TASK_DESC3" :"réalisation des developpement d’application web avec de react Native et API CodeIgniter 3",
+
+
+    "CENTIC" : "Chez CenTIC Mada",
+    "CERTIFICAT" :"Certification : Obtention de la certification pour un stage d'étude en licence",
+    "DATE_CENTIC" : "2021 - 2022",
+    "TASK_DESC4" :"Développement d'une application de gestion du parc informatique avec CodeIgniter"
+
   }
 }
