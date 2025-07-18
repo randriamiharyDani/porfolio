@@ -1,0 +1,11 @@
+canvas {
+  z-index: 5;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+
+  // background: linear-gradient(to bottom, #1e1e2f, #2c2c3f);
+   @apply bg-gray-900 ;
+}

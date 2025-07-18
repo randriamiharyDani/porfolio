@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import gsap from "gsap";
 import { TranslateModule } from '@ngx-translate/core';
+import { CosmosComponent } from "../cosmos/cosmos.component";
 
 @Component({
   selector: 'app-accueil',
-  imports: [TranslateModule],
+  imports: [TranslateModule, CosmosComponent],
   templateUrl: './accueil.component.html',
   styleUrl: './accueil.component.scss'
 })
