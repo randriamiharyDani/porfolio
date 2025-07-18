@@ -29,12 +29,12 @@
   to { width: 100% }
 }
 
-.slide{
-  background-image: url('/assets/cta01.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: background-position 0.5s;
-}
+// .slide{
+//   background-image: url('/assets/cta01.jpg');
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   transition: background-position 0.5s;
+// }
 // responsive
 @media screen and (max-width: 600px) {
   .texte {

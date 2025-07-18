@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { AccueilComponent } from "../accueil/accueil.component";
 import { ProjectComponent } from "../project/project.component";
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { MiniCosmosComponent } from "../mini-cosmos/mini-cosmos.component";
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     SlideComponent,
     FooterComponent,
     AccueilComponent,
-    TranslateModule, ProjectComponent],
+    TranslateModule, ProjectComponent, MiniCosmosComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
