@@ -12,13 +12,12 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-home',
   imports: [NavBarComponent,
-            ProfileComponent,
-            CompetenceComponent,
-            SlideComponent,
-            FooterComponent,
-            AccueilComponent,
-            TranslateModule
-          ],
+    ProfileComponent,
+    CompetenceComponent,
+    SlideComponent,
+    FooterComponent,
+    AccueilComponent,
+    TranslateModule, ProjectComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

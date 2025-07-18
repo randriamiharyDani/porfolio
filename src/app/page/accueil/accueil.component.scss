@@ -1,29 +1,3 @@
-  .img-fluid {
-    max-width: 60%;
-    max-height: 60%;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* Ombre sur l'image */
-    animation: border-color-cycle 3s linear infinite;
-    /* Définition de l'animation */
-    @keyframes border-color-cycle {
-      0% {
-        border-color: #e63946;
-      }
-      33% {
-        border-color: blue;
-      }
-      66% {
-        border-color: #9561f4;
-      }
-      100% {
-        border-color: #e63946;
-      }
-    }
-  }
-  .welcome {
-    width: 100%;
-  }
 
   .text1 {
     font-size: 25px;
@@ -58,7 +32,7 @@
     color: white
   }
   .nom {
-    @apply text-[55px] text-blue-600 border border-cyan-300 border-x-8 px-5 bg-slate-200 bg-opacity-100 m-5 rounded-3xl shadow-lg transition-transform duration-300 scale-105 hover:shadow-xl;
+    @apply text-[55px] text-white  m-5 rounded-3xl shadow-lg transition-transform duration-300 scale-105 hover:shadow-xl;
   }
 
   @media (max-width : 1470px) {
@@ -78,7 +52,7 @@
   }
   @media (min-width : 460px) and (max-width : 896px) {
     .nom {
-      font-size: 25px;
+      font-size: 35px;
     }
     .box-img {
       text-align: center;
@@ -100,3 +74,11 @@
       left: -120px;
     }
   }
+
+  @media (max-width: 768px) {
+ .accueil-container{
+    margin-top: 170px;
+ }
+
+  }
+

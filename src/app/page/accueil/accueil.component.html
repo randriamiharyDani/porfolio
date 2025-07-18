@@ -1,20 +1,24 @@
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-  <!-- Texte -->
-  <div class="">
-    <div class="welcome mt-10">
+<div class="relative w-full h-screen bg-cover bg-center z-0" style="background-image: url('/assets/couverture.jpg')">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
-      <h1 class="text1 text-white">{{'ACCUEIL.SALUET' | translate}} </h1>
-      <span class=" nom">RANDRIAMIHARY Dani</span>
-      <p>{{'ACCUEIL.PARCOURS' | translate}}</p>
+  <div class="relative z-10 container mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-center gap-10">
+    <!-- Texte -->
+    <div class="text-white md:w-1/2 text-center md:text-left space-y-6 p-10 m-10">
+      <p class="text-lg md:text-7xl font-bold">{{ 'ACCUEIL.SALUET' | translate }}</p>
+      <h1 class="text-cyan-400 text-4xl font-semibold block">RANDRIAMIHARY Dani</h1>
+      <p class="text-lg leading-relaxed">{{ 'ACCUEIL.PARCOURS' | translate }}</p>
+
+      <a href="#profil">
+        <button class="bg-cyan-500 hover:bg-cyan-700 mt-10 text-white font-bold px-6 py-3 rounded shadow-lg transition duration-300">
+          {{ 'ACCUEIL.BUTTOM' | translate }}
+        </button>
+      </a>
     </div>
-    <button
-      class="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-2 px-6 rounded shadow transition duration-300 my-20 py-4">
-      <a href="#profil">{{'ACCUEIL.BUTTOM' | translate}}</a>
-    </button>
-  </div>
-  <!-- Image -->
-  <div class="z-5 px-6 box-img">
-    <img [src]="imagePath" alt="Portrait"
-      class="rounded-full border-4 img-fluid shadow-lg transform hover:scale-105 transition duration-500 img-profil">
+
+    <!-- Image -->
+    <div class="md:w-1/2 flex justify-center">
+      <img [src]="imagePath" alt="Portrait"
+        class="rounded-full w-64 h-64 object-cover border-4 border-cyan-400 shadow-lg transform hover:scale-105 transition duration-500">
+    </div>
   </div>
 </div>
