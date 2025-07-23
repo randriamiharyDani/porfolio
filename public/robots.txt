@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dani-randria.vercel.app/sitemap.xml

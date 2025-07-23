@@ -14,8 +14,6 @@ export class ProjectComponent {
     { id: 1, title: 'porfolio',image:'assets/portfolio.jpg' , description: 'Angular' },
     { id: 2, title: 'Gestion de Stoks' ,image:'assets/profile.jpg', description: 'Description 2' },
     { id: 3, title: 'Calculatrice' ,image:'assets/profile.jpg', description: ' Html /CSS / JavaScript' },
-    { id: 4, title: 'CV' ,image:'assets/profile.jpg', description: ' Photoshop' },
-    { id: 5, title: 'Autre CV' ,image:'assets/profile.jpg', description: 'Html /CSS / JavaScript' },
 
   ];
 
