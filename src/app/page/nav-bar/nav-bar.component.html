@@ -1,26 +1,63 @@
-<nav class="bg-gray-400 bg-opacity-95 w-full fixed z-10 p-4 transition-all duration-300 mt-7">
-  <div class="container mx-auto flex flex-wrap justify-between items-center">
+<nav
+  [ngClass]="scrolled ? 'py-2 bg-night-950/85 shadow-lg shadow-black/40' : 'py-4 bg-transparent'"
+  class="fixed inset-x-0 top-0 z-50 border-b border-white/5 backdrop-blur-xl transition-all duration-300">
+  <div class="container mx-auto flex items-center justify-between px-5 lg:px-8">
+
     <!-- Logo -->
-    <div class="text-white font-bold text-3xl hover:text-orange-600 hover:cursor-pointer porfolio px-5">
-      Portfolio
+    <a href="#accueil" (click)="closeMenu()"
+      class="font-display text-2xl font-bold tracking-tight text-white group">
+      Dani<span class="text-cyan-400">.</span><span class="text-violet-400">dev</span>
+      <span class="block h-0.5 w-0 -translate-x-1 bg-gradient-to-r from-cyan-400 to-violet-500 transition-all duration-300 group-hover:w-full"></span>
+    </a>
+
+    <!-- Desktop menu -->
+    <div class="hidden items-center gap-1 lg:flex">
+      <a href="#accueil" class="nav-link">{{ 'NAV.HOME' | translate }}</a>
+      <a href="#profil" class="nav-link">{{ 'NAV.ABOUT' | translate }}</a>
+      <a href="#competences" class="nav-link">{{ 'NAV.SKILLS' | translate }}</a>
+      <a href="#projets" class="nav-link">{{ 'NAV.PROJECTS' | translate }}</a>
+      <a href="#contact" class="nav-link">{{ 'NAV.CONTACT' | translate }}</a>
     </div>
 
+    <div class="flex items-center gap-3">
+      <!-- Lang switcher -->
+      <div class="flex items-center rounded-full border border-white/10 bg-white/5 p-1 text-xs font-semibold">
+        <button (click)="switchLanguage('fr')"
+          class="rounded-full px-3 py-1 transition-all duration-300"
+          [ngClass]="currentLang === 'fr' ? 'bg-cyan-500 text-white shadow' : 'text-slate-300 hover:text-white'">Fr</button>
+        <button (click)="switchLanguage('en')"
+          class="rounded-full px-3 py-1 transition-all duration-300"
+          [ngClass]="currentLang === 'en' ? 'bg-cyan-500 text-white shadow' : 'text-slate-300 hover:text-white'">En</button>
+      </div>
 
+      <!-- CTA -->
+      <a href="#contact" class="hidden rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-violet-600/30 transition-transform hover:scale-105 lg:inline-block">
+        {{ 'NAV.HIRE' | translate }}
+      </a>
 
-
-    <div id="menu" [ngClass]="{'hidden': !menuOpen, 'flex': menuOpen}"  class="nav flex flex-col lg:flex lg:flex-row lg:space-x-4 items-center lg:mt-0 mt-4 lg:justify-end xs:w-full" >
-      <a href="#accueil" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.HOME' | translate }}</a>
-      <a href="#profil" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.ABOUT' | translate }}</a>
-      <a href="#Compétences" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.SKILLS' | translate }}</a>
-      <!-- <a href="#project" class="lien px-4 py-2 hover:text-orange-600">Projet</a> -->
-      <a href="#Contact" class="lien px-4 py-2 hover:text-orange-600">{{ 'NAV.CONTACT' | translate }}</a>
-
+      <!-- Hamburger -->
+      <button (click)="toggleMenu()" aria-label="Menu"
+        class="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/10 bg-white/5 lg:hidden">
+        <span class="h-0.5 w-5 rounded bg-white transition-all duration-300" [ngClass]="menuOpen ? 'translate-y-2 rotate-45' : ''"></span>
+        <span class="h-0.5 w-5 rounded bg-white transition-all duration-300" [ngClass]="menuOpen ? 'opacity-0' : ''"></span>
+        <span class="h-0.5 w-5 rounded bg-white transition-all duration-300" [ngClass]="menuOpen ? '-translate-y-2 -rotate-45' : ''"></span>
+      </button>
     </div>
-    <button (click)="toggleMenu()" class="text-white lg:hidden block focus:outline-none">
-      <img src="/assets/free_icon_1.svg" alt="Menu" class="w-8 h-8">
-    </button>
+  </div>
 
-
+  <!-- Mobile menu -->
+  <div [ngClass]="menuOpen ? 'pointer-events-auto max-h-96 opacity-100' : 'pointer-events-none max-h-0 opacity-0'"
+    class="overflow-hidden transition-all duration-500 lg:hidden">
+    <div class="mx-4 my-3 flex flex-col gap-1 rounded-2xl border border-white/10 bg-night-900/95 p-4 backdrop-blur-xl">
+      <a href="#accueil" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.HOME' | translate }}</a>
+      <a href="#profil" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.ABOUT' | translate }}</a>
+      <a href="#competences" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.SKILLS' | translate }}</a>
+      <a href="#projets" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.PROJECTS' | translate }}</a>
+      <a href="#contact" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.CONTACT' | translate }}</a>
+      <a href="#contact" (click)="closeMenu()"
+        class="mt-2 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 px-4 py-3 text-center font-semibold text-white">
+        {{ 'NAV.HIRE' | translate }}
+      </a>
+    </div>
   </div>
 </nav>
-

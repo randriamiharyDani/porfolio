@@ -1,57 +1,122 @@
 {
   "NAV": {
     "HOME": "Accueil",
-    "ABOUT": "Profile",
+    "ABOUT": "À propos",
     "SKILLS": "Compétences",
-    "CONTACT": "Contact"
+    "PROJECTS": "Projets",
+    "CONTACT": "Contact",
+    "HIRE": "Me recruter"
   },
-   "PROFIL" :{
-    "PROFILE" : "Profile",
-     "ABOUT" : "Apropos",
-    "ABOUT_ME" : "De Moi",
-    "PARAGRAPHE": "Je suis un développeur web junior passionné par la technologie et le développement logiciel. Spécialisé en Angular et Laravel, j'ai acquis des compétences solides dans la création d'applications web modernes et dynamiques. Bien que je sois au début de ma carrière, j'ai une grande volonté d'apprendre et de contribuer à des projets concrets. Mon objectif est de perfectionner mes compétences techniques tout en apportant une valeur ajoutée aux équipes avec lesquelles je collabore."
+  "ACCUEIL": {
+    "AVAILABLE": "Disponible pour de nouvelles opportunités",
+    "HELLO": "Bonjour, je suis",
+    "NAME": "Randriamihary Dani",
+    "ROLE1": "Développeur Full-Stack Junior",
+    "ROLE2": "Spécialiste Angular & Laravel",
+    "ROLE3": "Créateur d'applications web",
+    "DESC": "Je conçois des applications web modernes, performantes et élégantes. Passionné par le développement logiciel, je transforme des idées en expériences digitales à la fois utiles et créatives.",
+    "CTA_PROJECTS": "Voir mes projets",
+    "CTA_CONTACT": "Contactez-moi",
+    "DOWNLOAD": "Télécharger mon CV"
   },
-  "ACCUEIL" :{
-    "SALUET" : "Bonjour, je suis",
-    "PARCOURS" : "Développeur web fullstack junior",
-    "BUTTOM" : "plus d'info"
+  "PROFIL": {
+    "CHIP": "À propos de moi",
+    "TITLE1": "À propos",
+    "TITLE2": "de moi",
+    "PARAGRAPHE": "Je suis un développeur web junior passionné par la technologie et le développement logiciel. Spécialisé en Angular et Laravel, j'ai acquis des compétences solides dans la création d'applications web modernes et dynamiques. Bien que je sois au début de ma carrière, j'ai une grande volonté d'apprendre et de contribuer à des projets concrets. Mon objectif est de perfectionner mes compétences techniques tout en apportant une valeur ajoutée aux équipes avec lesquelles je collabore.",
+    "BADGE": "Déjà motivé à travailler avec vous",
+    "POINT1": "Développement front-end moderne avec Angular",
+    "POINT2": "APIs robustes et sécurisées avec Laravel",
+    "POINT3": "Intégration mobile avec React Native",
+    "POINT4": "Bases de données & génie logiciel",
+    "STAT1": "Années d'apprentissage",
+    "STAT2": "Projets réalisés",
+    "STAT3": "Années d'expérience",
+    "STAT4": "Technologies maîtrisées"
   },
-    "SKILL" :{
-    "SKILL1" : "Compe",
-    "SKILL2" : "ténces",
-    "SKILL_TECHNICAL" : "Compétences technique",
-    "SKILL_PREFOTIONNEL" : "Compétence professionnelles",
-    "CREATIVITY" : "Creativite",
-    "COMMUNICATION" : "Communication",
-    "TROUBLESHOOTING" : "Résolution de problèmes",
-    "TEAMWORK" : "Travail d'équipe"
+  "SKILL": {
+    "CHIP": "Mes compétences",
+    "SECTION_TITLE1": "Compétences &",
+    "SECTION_TITLE2": "Expertise",
+    "SUB": "Les technologies et outils que j'utilise pour donner vie à des projets concrets.",
+    "CAT_FRONT": "Front-end",
+    "CAT_BACK": "Back-end",
+    "CAT_MOBILE": "Mobile",
+    "CAT_TOOLS": "Outils",
+    "CREATIVITY": "Créativité",
+    "COMMUNICATION": "Communication",
+    "TROUBLESHOOTING": "Résolution de problèmes",
+    "TEAMWORK": "Travail d'équipe"
   },
-    "TRAINNING" :{
-    "TRAINING1" : "forma",
-    "TRAINING2" : "tion",
-    "EDUCATION" : "Education",
-    "EXPERIENCE" : "Experience",
-     "PROGRESS" : "En cours",
-    "MASTER2" : "Actuellement en deuxième année du cycle Master, avec un mémoire en cours de rédaction. La soutenance est prévue prochainement.",
+  "TRAINNING": {
+    "EDUCATION": "Formation",
+    "EXPERIENCE": "Expérience",
+    "PERIOD_MASTER2": "2024 - En cours",
+    "MASTER2": "Actuellement en deuxième année du cycle Master, avec un mémoire en cours de rédaction. La soutenance est prévue prochainement.",
     "MASTER1": "Première année du cycle Master, approfondissant les compétences en développement logiciel et gestion de projets.",
-    "LICENCE" : "Spécialisée en bases de données et génie logiciel, obtenue en 2022 après trois ans d'études à l'université CNTEMAD Ankadifotsy Antananarivo.",
-     "2EME_ANNEE" : "Poursuite de la licence en informatique à l'université CNTEMAD Ankadifotsy Antananarivo.",
-      "BACC" : "Diplôme obtenu en 2018 .",
-      "TASK" :"Tâche",
-      "TASK_DESC0" : "Du 12 août à aujourd'hui",
-      "TASK_DESC1" : "Développement d'une application web de gestion des impôts pour la commune urbaine d'Antananarivo en utilisant le framework Angular pour le front-end et Laravel pour les API back-end.",
-      "DATEGIZ" : "Septembre - Décembre 2024",
-      "TASK_DESC2" : "Développement d'une application web de gestion des impôts pour la commune urbaine d'Antananarivo en utilisant le framework Angular pour le front-end et Laravel pour les API back-end.",
-
-       "NIRINFO" : "Chez Nir'info",
-    "DATE_NIRINFO" : "Fevrier - Mars 2024",
-    "TASK_DESC3" :"réalisation des developpement d’application web avec de react Native et API CodeIgniter 3",
-
-
-    "CENTIC" : "Chez CenTIC Mada",
-    "CERTIFICAT" :"Certification : Obtention de la certification pour un stage d'étude en licence",
-    "DATE_CENTIC" : "2021 - 2022",
-    "TASK_DESC4" :"Développement d'une application de gestion du parc informatique avec CodeIgniter"
-
+    "LICENCE": "Spécialisée en bases de données et génie logiciel, obtenue en 2022 après trois ans d'études à l'université CNTEMAD Ankadifotsy Antananarivo.",
+    "2EME_ANNEE": "Poursuite de la licence en informatique à l'université CNTEMAD Ankadifotsy Antananarivo.",
+    "BACC": "Diplôme obtenu en 2018.",
+    "NIRINFO": "Chez Nir'info",
+    "CENTIC": "Chez CenTIC Mada",
+    "CERTIFICAT": "Certification : stage d'étude en licence",
+    "DATE_CENTIC": "2021 - 2022",
+    "TASK_DESC0": "Du 12 août à aujourd'hui",
+    "TASK_DESC1": "Développement d'une application web de gestion des impôts pour la commune urbaine d'Antananarivo en utilisant Angular pour le front-end et Laravel pour les API back-end.",
+    "DATEGIZ": "Septembre - Décembre 2024",
+    "TASK_DESC2": "Développement d'une application web de gestion des impôts pour la commune urbaine d'Antananarivo en utilisant Angular pour le front-end et Laravel pour les API back-end.",
+    "DATE_NIRINFO": "Février - Mars 2024",
+    "TASK_DESC3": "Réalisation de développement d'applications web avec React Native et API CodeIgniter 3.",
+    "TASK_DESC4": "Développement d'une application de gestion du parc informatique avec CodeIgniter."
+  },
+  "PROJECT": {
+    "CHIP": "Mon portfolio",
+    "TITLE1": "Mes récents",
+    "TITLE2": "projets",
+    "SUB": "Une sélection de réalisations qui illustrent mon savoir-faire de bout en bout : du design à l'API.",
+    "P1_TITLE": "Portfolio",
+    "P1_DESC": "Ce site portfolio responsive, développé avec Angular 19 et Tailwind CSS, avec rendu côté serveur (SSR) pour d'excellentes performances SEO.",
+    "P2_TITLE": "Gestion de Stocks",
+    "P2_DESC": "Application web complète de gestion de stocks : produits, entrées, sorties et rapports, avec Angular côté front et API Laravel côté back.",
+    "P3_TITLE": "Gestion des Impôts (CUA)",
+    "P3_DESC": "Application de gestion des impôts pour la Commune Urbaine d'Antananarivo, combinant Angular et des APIs Laravel pour un traitement efficace des données fiscales.",
+    "P4_TITLE": "Calculatrice",
+    "P4_DESC": "Calculatrice interactive moderne réalisée avec HTML, CSS et JavaScript, au design soigné et entièrement responsive.",
+    "P5_TITLE": "Application Nir'info",
+    "P5_DESC": "Développement d'une application web utilisant React Native couplée à une API CodeIgniter 3 pour des fonctionnalités temps réel.",
+    "VIEW_CODE": "Voir le code",
+    "DEMO": "Démo"
+  },
+  "SLIDE": {
+    "TITLE": "Actuellement",
+    "TEXT": "Ouvert aux offres d'emploi et de stage",
+    "CTA": "Travaillons ensemble"
+  },
+  "CONTACT": {
+    "CHIP": "Contact",
+    "TITLE1": "Restons en",
+    "TITLE2": "contact",
+    "SUB": "Un projet en tête, une question, ou juste envie de discuter ? N'hésitez pas à m'écrire, je réponds rapidement.",
+    "FORM_TITLE": "Envoyez-moi un message",
+    "NAME": "Nom",
+    "NAME_PLACEHOLDER": "Votre nom",
+    "FIRSTNAME": "Prénom",
+    "FIRSTNAME_PLACEHOLDER": "Votre prénom",
+    "EMAIL": "Email",
+    "EMAIL_PLACEHOLDER": "vous@exemple.com",
+    "PHONE": "Téléphone",
+    "PHONE_PLACEHOLDER": "Votre numéro",
+    "MESSAGE": "Message",
+    "MESSAGE_PLACEHOLDER": "Décrivez votre projet…",
+    "SEND": "Envoyer le message",
+    "SENDING": "Envoi en cours…",
+    "SUCCESS": "Votre message a été envoyé avec succès ! Je vous répondrai dès que possible.",
+    "ERROR": "Une erreur est survenue lors de l'envoi. Veuillez réessayer.",
+    "INFO_TITLE": "Coordonnées",
+    "ADDRESS": "Adresse"
+  },
+  "FOOTER": {
+    "RIGHTS": "Tous droits réservés.",
+    "TOP": "Retour en haut"
   }
 }

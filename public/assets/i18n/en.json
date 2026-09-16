@@ -3,56 +3,120 @@
     "HOME": "Home",
     "ABOUT": "About",
     "SKILLS": "Skills",
-    "CONTACT": "Contact"
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "HIRE": "Hire me"
   },
-  "PROFIL" :{
-    "PROFILE" : "Profil",
-    "ABOUT" : "about",
-    "ABOUT_ME" : "me",
-    "PARAGRAPHE" : "I am a junior web developer passionate about technology and software development. Specialized in Angular and Laravel, I have acquired solid skills in creating modern and dynamic web applications. Although I am at the beginning of my career, I have a great desire to learn and contribute to concrete projects. My goal is to perfect my technical skills while bringing added value to the teams with which I collaborate."
+  "ACCUEIL": {
+    "AVAILABLE": "Available for new opportunities",
+    "HELLO": "Hello, I am",
+    "NAME": "Randriamihary Dani",
+    "ROLE1": "Junior Full-Stack Developer",
+    "ROLE2": "Angular & Laravel Specialist",
+    "ROLE3": "Web App Creator",
+    "DESC": "I craft modern, performant and elegant web applications. Passionate about software development, I turn ideas into digital experiences that are both useful and creative.",
+    "CTA_PROJECTS": "View my projects",
+    "CTA_CONTACT": "Contact me",
+    "DOWNLOAD": "Download my resume"
   },
-   "ACCUEIL" :{
-    "SALUET" : "Hello, I am",
-    "PARCOURS" : "Junior fullstack web developer",
-    "BUTTOM" : "more info"
+  "PROFIL": {
+    "CHIP": "About me",
+    "TITLE1": "About",
+    "TITLE2": "me",
+    "PARAGRAPHE": "I am a junior web developer passionate about technology and software development. Specialized in Angular and Laravel, I have acquired solid skills in creating modern and dynamic web applications. Although I am at the beginning of my career, I have a great desire to learn and contribute to concrete projects. My goal is to perfect my technical skills while bringing added value to the teams with which I collaborate.",
+    "BADGE": "Eager to work with you",
+    "POINT1": "Modern front-end development with Angular",
+    "POINT2": "Robust and secure APIs with Laravel",
+    "POINT3": "Mobile integration with React Native",
+    "POINT4": "Databases & software engineering",
+    "STAT1": "Years of learning",
+    "STAT2": "Projects completed",
+    "STAT3": "Years of experience",
+    "STAT4": "Technologies mastered"
   },
-  "SKILL" :{
-    "SKILL1" : "ski",
-    "SKILL2" : "lls",
-    "SKILL_TECHNICAL" : "Technical skills",
-    "SKILL_PREFOTIONNEL" : "Professional skills",
-    "CREATIVITY" : "Creativity",
-    "COMMUNICATION" : "Communication",
-    "TROUBLESHOOTING" : "problem-solving",
-    "TEAMWORK" : "Teamwork"
+  "SKILL": {
+    "CHIP": "My skills",
+    "SECTION_TITLE1": "Skills &",
+    "SECTION_TITLE2": "Expertise",
+    "SUB": "The technologies and tools I use to bring real projects to life.",
+    "CAT_FRONT": "Front-end",
+    "CAT_BACK": "Back-end",
+    "CAT_MOBILE": "Mobile",
+    "CAT_TOOLS": "Tools",
+    "CREATIVITY": "Creativity",
+    "COMMUNICATION": "Communication",
+    "TROUBLESHOOTING": "Problem-solving",
+    "TEAMWORK": "Teamwork"
   },
-  "TRAINNING" :{
-    "TRAINING1" : "Trai",
-    "TRAINING2" : "ning",
-    "EDUCATION" : "Education",
-    "EXPERIENCE" : "Experience",
-    "PROGRESS" : "In progress",
-    "MASTER2" : "Currently in the second year of the Master's cycle, with a dissertation currently being written. The defense is planned soon.",
-    "MASTER1" : "First year of the Master cycle, deepening skills in software development and project management.",
-    "LICENCE" : "Specialized in databases and software engineering, obtained in 2022 after three years of study at CNTEMAD Ankadifotsy Antananarivo University.",
-    "2EME_ANNEE" : "Continuation of the degree in computer science at CNTEMAD Ankadifotsy Antananarivo University.",
-    "BACC" : "Diploma obtained in 2018.",
-    "TASK" :"Task",
-    "TASK_DESC0" :"From August 12 to today",
-    "TASK_DESC1" :"Development of a tax management web application for the urban municipality of Antananarivo using the Angular framework for the front-end and Laravel for the back-end APIs",
-    "DATEGIZ" : "September - December 2024",
-    "TASK_DESC2" :"Development of a tax management web application for the urban municipality of Antananarivo using the Angular framework for the front-end and Laravel for the back-end APIs",
-
-    "NIRINFO" : "At Nir'info",
-    "DATE_NIRINFO" : "February - March 2024",
-    "TASK_DESC3" :"carrying out web application development with React Native and CodeIgniter 3 API",
-
-
-    "CENTIC" : "At CenTIC Mada",
-    "CERTIFICAT" : "Certification: Obtaining certification for a bachelor’s study internship",
-    "DATE_CENTIC" : "2021 - 2022",
-    "TASK_DESC4" :"Development of an IT asset management application with CodeIgniter"
-
-
+  "TRAINNING": {
+    "EDUCATION": "Education",
+    "EXPERIENCE": "Experience",
+    "PERIOD_MASTER2": "2024 - In progress",
+    "MASTER2": "Currently in the second year of the Master's cycle, with a dissertation currently being written. The defense is planned soon.",
+    "MASTER1": "First year of the Master cycle, deepening skills in software development and project management.",
+    "LICENCE": "Specialized in databases and software engineering, obtained in 2022 after three years of study at CNTEMAD Ankadifotsy Antananarivo University.",
+    "2EME_ANNEE": "Continuation of the degree in computer science at CNTEMAD Ankadifotsy Antananarivo University.",
+    "BACC": "Diploma obtained in 2018.",
+    "NIRINFO": "At Nir'info",
+    "CENTIC": "At CenTIC Mada",
+    "CERTIFICAT": "Certification: bachelor study internship",
+    "DATE_CENTIC": "2021 - 2022",
+    "TASK_DESC0": "From August 12 to today",
+    "TASK_DESC1": "Development of a tax management web application for the urban municipality of Antananarivo using Angular for the front-end and Laravel for the back-end APIs.",
+    "DATEGIZ": "September - December 2024",
+    "TASK_DESC2": "Development of a tax management web application for the urban municipality of Antananarivo using Angular for the front-end and Laravel for the back-end APIs.",
+    "DATE_NIRINFO": "February - March 2024",
+    "TASK_DESC3": "Developing web applications with React Native and CodeIgniter 3 API.",
+    "TASK_DESC4": "Development of an IT asset management application with CodeIgniter."
+  },
+  "PROJECT": {
+    "CHIP": "My portfolio",
+    "TITLE1": "My recent",
+    "TITLE2": "projects",
+    "SUB": "A selection of projects that showcase my end-to-end craft: from design to API.",
+    "P1_TITLE": "Portfolio",
+    "P1_DESC": "This responsive portfolio website, built with Angular 19 and Tailwind CSS, with server-side rendering (SSR) for great SEO performance.",
+    "P2_TITLE": "Stock Management",
+    "P2_DESC": "Complete stock management web application: products, entries, exits and reports, with Angular on the front-end and a Laravel API on the back-end.",
+    "P3_TITLE": "Tax Management (CUA)",
+    "P3_DESC": "Tax management application for the Urban Commune of Antananarivo, combining Angular and Laravel APIs for efficient handling of fiscal data.",
+    "P4_TITLE": "Calculator",
+    "P4_DESC": "Modern interactive calculator built with HTML, CSS and JavaScript, with a polished, fully responsive design.",
+    "P5_TITLE": "Nir'info App",
+    "P5_DESC": "Development of a web application using React Native combined with a CodeIgniter 3 API for real-time features.",
+    "VIEW_CODE": "View code",
+    "DEMO": "Demo"
+  },
+  "SLIDE": {
+    "TITLE": "Currently",
+    "TEXT": "Open to job offers and internships",
+    "CTA": "Let's work together"
+  },
+  "CONTACT": {
+    "CHIP": "Contact",
+    "TITLE1": "Let's stay in",
+    "TITLE2": "touch",
+    "SUB": "A project in mind, a question, or just up for a chat? Don't hesitate to reach out, I reply quickly.",
+    "FORM_TITLE": "Send me a message",
+    "NAME": "Last name",
+    "NAME_PLACEHOLDER": "Your last name",
+    "FIRSTNAME": "First name",
+    "FIRSTNAME_PLACEHOLDER": "Your first name",
+    "EMAIL": "Email",
+    "EMAIL_PLACEHOLDER": "you@example.com",
+    "PHONE": "Phone",
+    "PHONE_PLACEHOLDER": "Your phone number",
+    "MESSAGE": "Message",
+    "MESSAGE_PLACEHOLDER": "Describe your project…",
+    "SEND": "Send message",
+    "SENDING": "Sending…",
+    "SUCCESS": "Your message has been sent successfully! I will get back to you as soon as possible.",
+    "ERROR": "An error occurred while sending. Please try again.",
+    "INFO_TITLE": "Get in touch",
+    "ADDRESS": "Address"
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved.",
+    "TOP": "Back to top"
   }
 }

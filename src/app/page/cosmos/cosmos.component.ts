@@ -15,6 +15,7 @@ export class CosmosComponent implements AfterViewInit , OnDestroy{
   private animationFrameId!: number;
 
   ngAfterViewInit(): void {
+    if (typeof document === 'undefined' || typeof window === 'undefined') return;
     this.canvas = document.getElementById('cosmisCanvas') as HTMLCanvasElement;
     if (!this.canvas) throw new Error('Canvas not found');
 
@@ -80,7 +81,9 @@ export class CosmosComponent implements AfterViewInit , OnDestroy{
   }
 
   ngOnDestroy(): void {
-    cancelAnimationFrame(this.animationFrameId);
+    if (typeof cancelAnimationFrame !== 'undefined') {
+      cancelAnimationFrame(this.animationFrameId);
+    }
   }
 }
 

@@ -1,40 +1,54 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
+
+interface Project {
+  title: string;
+  desc: string;
+  image: string;
+  tags: string[];
+  github?: string;
+  demo?: string;
+}
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule , ReactiveFormsModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './project.component.html',
-  styleUrl: './project.component.scss'
+  styleUrl: './project.component.scss',
 })
 export class ProjectComponent {
-
-  cards = [
-    { id: 1, title: 'porfolio',image:'assets/portfolio.jpg' , description: 'Angular' },
-    { id: 2, title: 'Gestion de Stoks' ,image:'assets/profile.jpg', description: 'Description 2' },
-    { id: 3, title: 'Calculatrice' ,image:'assets/profile.jpg', description: ' Html /CSS / JavaScript' },
-
+  projects: Project[] = [
+    {
+      title: 'PROJECT.P1_TITLE',
+      desc: 'PROJECT.P1_DESC',
+      image: 'assets/portfolio.jpg',
+      tags: ['Angular', 'Tailwind CSS', 'SSR'],
+      github: 'https://github.com/randriamiharyDani?tab=repositories',
+    },
+    {
+      title: 'PROJECT.P2_TITLE',
+      desc: 'PROJECT.P2_DESC',
+      image: 'assets/couverture.jpg',
+      tags: ['Angular', 'Laravel'],
+    },
+    {
+      title: 'PROJECT.P3_TITLE',
+      desc: 'PROJECT.P3_DESC',
+      image: 'assets/cta01.jpg',
+      tags: ['Angular', 'Laravel', 'APIs REST'],
+    },
+    {
+      title: 'PROJECT.P4_TITLE',
+      desc: 'PROJECT.P4_DESC',
+      image: 'assets/phone.png',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+    },
+    {
+      title: 'PROJECT.P5_TITLE',
+      desc: 'PROJECT.P5_DESC',
+      image: 'assets/boys.png',
+      tags: ['React Native', 'CodeIgniter', 'API'],
+    },
   ];
-
-  startIndex = 0;
-  cardsPerPage = 4;
-
-  next() {
-    if (this.startIndex + this.cardsPerPage < this.cards.length) {
-      this.startIndex += this.cardsPerPage;
-    }
-  }
-
-
-  prev() {
-    if (this.startIndex - this.cardsPerPage >= 0) {
-      this.startIndex -= this.cardsPerPage;
-    }
-  }
-
-  // Obtenir les cartes actuellement visibles
-  getVisibleCards() {
-    return this.cards.slice(this.startIndex, this.startIndex + this.cardsPerPage);
-  }
 }

@@ -1,27 +1,30 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import {ReactiveFormsModule} from '@angular/forms';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { initScrollReveal } from './shared/scroll-reveal';
 
 @Component({
   selector: 'app-root',
-  standalone: true, // Standalone Component
-  imports: [RouterOutlet , CommonModule, ReactiveFormsModule],
+  standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent  implements OnInit{
-  title = 'dani-pf';
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
+  title = 'portfolio';
+  loading = true;
+  private destroyReveal: (() => void) | null = null;
 
-
-
-   loading = true;
-
-  ngOnInit() {
+  ngOnInit(): void {
     setTimeout(() => {
       this.loading = false;
-    }, 2000);
+    }, 1200);
+  }
+
+  ngAfterViewInit(): void {
+    this.destroyReveal = initScrollReveal();
+  }
+
+  ngOnDestroy(): void {
+    this.destroyReveal?.();
   }
 }

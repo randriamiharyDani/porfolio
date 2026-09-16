@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { CosmosComponent } from "../cosmos/cosmos.component";
-import { MiniCosmosComponent } from "../mini-cosmos/mini-cosmos.component";
+import { TranslateModule } from '@ngx-translate/core';
+import { MiniCosmosComponent } from '../mini-cosmos/mini-cosmos.component';
 
 @Component({
   selector: 'app-slide',
-  imports: [CosmosComponent, MiniCosmosComponent],
+  imports: [TranslateModule, MiniCosmosComponent],
   templateUrl: './slide.component.html',
-  styleUrl: './slide.component.scss'
+  styleUrl: './slide.component.scss',
 })
-export class SlideComponent {
-  slideTexte = "En cours de recherche d'un travail";
-}
+export class SlideComponent {}

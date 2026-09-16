@@ -1,16 +1,24 @@
-.porfolio{
-color: transparent;
--webkit-text-stroke: 0.3vh white;
-text-transform: uppercase;
-}
-.lien{
-  @apply text-white px-4 py-2 hover:bg-cyan-400 hover:rounded-2xl w-full text-center;
+.nav-link {
+  @apply relative rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-colors duration-300 hover:text-white;
 }
 
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 4px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #22d3ee, #8b5cf6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
 
-@media (min-width: 600px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+.nav-link-mobile {
+  @apply rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition-colors hover:bg-cyan-400/10 hover:text-cyan-300;
 }

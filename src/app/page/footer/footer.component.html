@@ -1,114 +1,147 @@
-<div class="bg-gray-800  text-white py-24">
-  <div class="container mx-auto px-6 pt-24">
-    <h1 class="text-4xl font-bold text-center mb-8 title">
-      Cont<span class="text-cyan-400">act</span>
-    </h1>
-    <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
+﻿<footer id="contact" class="relative overflow-hidden bg-night-950 pt-24 sm:pt-32">
+  <div class="pointer-events-none absolute -top-40 left-1/2 h-96 w-2/3 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl"></div>
 
+  <div class="container mx-auto px-6 lg:px-10">
+    <!-- Header -->
+    <div class="mx-auto max-w-3xl text-center">
+      <div data-reveal class="justify-center chip">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+        {{ 'CONTACT.CHIP' | translate }}
+      </div>
+      <h2 data-reveal data-delay="80" class="section-title mt-5">
+        {{ 'CONTACT.TITLE1' | translate }} <span class="text-gradient">{{ 'CONTACT.TITLE2' | translate }}</span>
+      </h2>
+      <p data-reveal data-delay="160" class="mt-4 text-slate-400">{{ 'CONTACT.SUB' | translate }}</p>
+    </div>
 
-      <!-- Contact Form -->
-      <div [formGroup]="form"  (ngSubmit)="onSubmit()" class="w-full lg:w-2/3 bg-gray-800 rounded-lg p-6 shadow-lg ">
-        <h2 class="text-2xl font-semibold mb-6">Contactez<span class="text-cyan-400">-Moi</span></h2>
-        <form   action="javascript:void(0)" (submit)="send()" method="POST" class="space-y-4">
-          <!-- Name -->
-          <div  class="grid grid-cols-2 gap-6">
-          <div>
-              <label for="name" class="block text-sm font-medium mb-1">Nom</label>
-              <input type="text" formControlName="nom" placeholder="Entrer votre nom"
-                class="w-full p-3 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-cyan-400 focus:outline-none">
+    <div class="mt-16 grid gap-8 lg:grid-cols-5">
+      <!-- Formulaire -->
+      <div data-reveal class="lg:col-span-3">
+        <form [formGroup]="form" (ngSubmit)="send()" class="glass rounded-3xl p-6 sm:p-8">
+          <h3 class="font-display text-2xl font-bold text-white">{{ 'CONTACT.FORM_TITLE' | translate }}</h3>
+
+          <div class="mt-6 grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="nom" class="mb-1.5 block text-sm font-medium text-slate-300">{{ 'CONTACT.NAME' | translate }}</label>
+              <input [class]="inputClass" id="nom" type="text" formControlName="nom" placeholder="{{ 'CONTACT.NAME_PLACEHOLDER' | translate }}" />
             </div>
             <div>
-              <label for="name" class="block text-sm font-medium mb-1">prenom</label>
-              <input type="text" formControlName="prenom" placeholder="Entrer votre prenom"
-                class="w-full p-3 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-cyan-400 focus:outline-none">
+              <label for="prenom" class="mb-1.5 block text-sm font-medium text-slate-300">{{ 'CONTACT.FIRSTNAME' | translate }}</label>
+              <input [class]="inputClass" id="prenom" type="text" formControlName="prenom" placeholder="{{ 'CONTACT.FIRSTNAME_PLACEHOLDER' | translate }}" />
             </div>
           </div>
-          <!-- Email -->
-          <div>
-            <label for="email" class="block text-sm font-medium mb-1">Email</label>
-            <input type="email"formControlName="email" placeholder="Your Email"
-              class="w-full p-3 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-cyan-400 focus:outline-none">
-          </div>
-          <div>
-            <label for="email" class="block text-sm font-medium mb-1">Tel</label>
-            <input type="number" formControlName="tel" placeholder="entrer votre numero tel"
-              class="w-full p-3 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-cyan-400 focus:outline-none">
-          </div>
-          <!-- Message -->
-          <div>
-            <label for="message" class="block text-sm font-medium mb-1">Message</label>
-            <textarea formControlName="message" rows="5" placeholder="Your Message"
-              class="w-full p-3 rounded-lg bg-gray-700 text-white focus:ring-2 focus:ring-cyan-400 focus:outline-none"></textarea>
+
+          <div class="mt-5 grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="email" class="mb-1.5 block text-sm font-medium text-slate-300">{{ 'CONTACT.EMAIL' | translate }}</label>
+              <input [class]="inputClass" id="email" type="email" formControlName="email" placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}" />
+            </div>
+            <div>
+              <label for="tel" class="mb-1.5 block text-sm font-medium text-slate-300">{{ 'CONTACT.PHONE' | translate }}</label>
+              <input [class]="inputClass" id="tel" type="tel" formControlName="tel" placeholder="{{ 'CONTACT.PHONE_PLACEHOLDER' | translate }}" />
+            </div>
           </div>
 
+          <div class="mt-5">
+            <label for="message" class="mb-1.5 block text-sm font-medium text-slate-300">{{ 'CONTACT.MESSAGE' | translate }}</label>
+            <textarea [class]="inputClass" id="message" rows="5" formControlName="message" placeholder="{{ 'CONTACT.MESSAGE_PLACEHOLDER' | translate }}"></textarea>
+          </div>
 
-          <!-- Submit Button -->
-          <button type="submit" [disabled]="isLoading"  [disabled]="form.invalid"
-            class="w-full py-3 bg-cyan-400 text-gray-900 rounded-lg font-semibold hover:bg-cyan-300 transition">
+          <!-- Statut -->
+          <div *ngIf="sent" class="mt-5 flex items-center gap-3 rounded-xl border border-emerald-400/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-300">
+            <svg class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            {{ 'CONTACT.SUCCESS' | translate }}
+          </div>
+          <div *ngIf="error" class="mt-5 flex items-center gap-3 rounded-xl border border-rose-400/30 bg-rose-500/10 px-4 py-3 text-sm text-rose-300">
+            <svg class="h-5 w-5 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            {{ 'CONTACT.ERROR' | translate }}
+          </div>
 
-            <!-- {{form.value | json}} -->
-          <span *ngIf="!isLoading">Envoyer</span>
-          <section *ngIf="isLoading" class="dots-container">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </section>
-
+          <button type="submit" [disabled]="form.invalid || isLoading"
+            class="btn-gradient mt-6 flex w-full items-center justify-center gap-2 rounded-xl px-6 py-3.5 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50">
+            <ng-container *ngIf="!isLoading">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>
+              {{ 'CONTACT.SEND' | translate }}
+            </ng-container>
+            <span *ngIf="isLoading" class="flex items-center gap-2">
+              <svg class="h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path></svg>
+              {{ 'CONTACT.SENDING' | translate }}
+            </span>
           </button>
-
         </form>
       </div>
 
+      <!-- Infos -->
+      <div data-reveal data-delay="120" class="lg:col-span-2">
+        <div class="flex h-full flex-col gap-6">
+          <div class="glass rounded-3xl p-6 sm:p-8">
+            <h3 class="font-display text-2xl font-bold text-white">{{ 'CONTACT.INFO_TITLE' | translate }}</h3>
 
-      <!-- Contact Info -->
-      <div class="w-full lg:w-1/3 bg-gray-800 rounded-lg p-6 shadow-lg h-full ">
-        <div class="mb-10">
-          <h2 class="text-2xl font-semibold mb-10 pb-4">Coordonnées</h2>
-          <ul class="space-y-4">
-            <li class="flex items-center space-x-4">
-              <span class="p-3 bg-cyan-400 rounded-full text-gray-900">
-                <img src="/assets/email.png" class="w-4 text-center" alt="" srcset="">
-              </span>
-              <span class="text-lg"> {{email}} </span>
-            </li>
-            <li class="flex items-center space-x-4">
-              <span class="p-3 bg-cyan-400 rounded-full text-gray-900">
-                <img src="/assets/phone1.png" class="w-4 text-center" alt="" srcset="">
-              </span>
-              <span class="text-lg"> {{phone}} </span>
-            </li>
-            <li class="flex items-center space-x-4">
-              <span class="p-3 bg-cyan-400 rounded-full text-gray-900">
-                <img src="/assets/adress.png" class="w-4 text-center" alt="" srcset="">
-              </span>
-              <span class="text-lg"> {{address}} </span>
-            </li>
-          </ul>
-        </div>
-        <!-- Map -->
-        <div class="relative w-full h-60 my-3">
-          <iframe class="absolute top-0 left-0 w-full h-full rounded-lg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5757498452285!2d47.54116772419699!3d-18.905893182263952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f0875ee1e11dd7%3A0xc8fcc98b41960666!2sBetongolo%2C%20Tananarive!5e0!3m2!1sfr!2smg!4v1737718769188!5m2!1sfr!2smg"
-            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        <!-- Réseaux Sociaux -->
-        <div class="contac-sociaux flex items-center justify-between">
-          <div class="flex flex-row space-x-4 items-center mt-10 lg:mt-0 xm:hidden">
-            <a href="https://www.facebook.com/stevs.daniimady/" class="bg-slate-300 rounded-full hover:bg-cyan-400 p-2"><img src="/assets/facebook.png"
-                alt="Facebook" class="w-5"></a>
-            <a href="https://github.com/randriamiharyDani?tab=repositories" class="bg-slate-300 rounded-full hover:bg-cyan-400 p-2"><img src="/assets/github.png"
-                alt="GitHub" class="w-5"></a>
-            <a href="#" class="bg-slate-300 rounded-full hover:bg-cyan-400 p-2"><img src="/assets/linkidin.png"
-                alt="LinkedIn" class="w-5"></a>
+            <ul class="mt-6 space-y-5">
+              <li class="flex items-center gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-300">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </span>
+                <div class="min-w-0">
+                  <p class="text-xs uppercase tracking-wider text-slate-500">{{ 'CONTACT.EMAIL' | translate }}</p>
+                  <a [href]="'mailto:' + email" class="truncate font-medium text-white hover:text-cyan-300">{{ email }}</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-500/15 text-violet-300">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.45 4.36a1 1 0 01-.54 1.3l-1.85.74a12.06 12.06 0 005.52 5.52l.74-1.85a1 1 0 011.3-.54l4.36 1.45a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.72 21 3 14.28 3 6V5z" /></svg>
+                </span>
+                <div class="min-w-0">
+                  <p class="text-xs uppercase tracking-wider text-slate-500">{{ 'CONTACT.PHONE' | translate }}</p>
+                  <a [href]="phoneHref" class="font-medium text-white hover:text-cyan-300">{{ phone }}</a>
+                </div>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-300">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                </span>
+                <div class="min-w-0">
+                  <p class="text-xs uppercase tracking-wider text-slate-500">{{ 'CONTACT.ADDRESS' | translate }}</p>
+                  <span class="font-medium text-white">{{ address }}</span>
+                </div>
+              </li>
+            </ul>
 
-        </div>
-        <div class="retour-accueil">
-          <a href="#accueil"><img src="/assets/upicon.svg"
-              class=" retour w-10 mx-16 bg-cyan-400 hover:bg-cyan-600 rounded-full" alt="" srcset=""></a>
+            <!-- Réseaux sociaux -->
+            <div class="mt-7 flex items-center gap-3 border-t border-white/10 pt-6">
+              <a href="https://github.com/randriamiharyDani?tab=repositories" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.02 1.76 2.69 1.25 3.35.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.18c0 .31.21.67.8.55A10.52 10.52 0 0023.5 12C23.5 5.65 18.35.5 12 .5z" /></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="social-link">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.55V9h3.57v11.45z" /></svg>
+              </a>
+              <a href="https://www.facebook.com/stevs.daniimady/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M13.4 22v-8.3h2.8l.42-3.25h-3.22V8.4c0-.94.26-1.58 1.61-1.58h1.72V3.84c-.3-.04-1.32-.13-2.5-.13-2.48 0-4.17 1.51-4.17 4.29v2.42H7.1v3.25h2.95V22H13.4z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Carte -->
+          <div class="glass overflow-hidden rounded-3xl">
+            <iframe class="h-52 w-full" loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.5757498452285!2d47.54116772419699!3d-18.905893182263952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f0875ee1e11dd7%3A0xc8fcc98b41960666!2sBetongolo%2C%20Tananarive!5e0!3m2!1sfr!2smg!4v1737718769188!5m2!1sfr!2smg"
+              title="Localisation" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Barre de bas -->
+  <div class="mt-20 border-t border-white/10">
+    <div class="container mx-auto flex flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row">
+      <p class="text-sm text-slate-400">
+        © {{ year }} <span class="font-semibold text-white">Dani Randriamihary</span> — {{ 'FOOTER.RIGHTS' | translate }}
+      </p>
+      <a href="#accueil" class="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 transition-colors hover:border-cyan-400/60 hover:text-cyan-300">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" /></svg>
+        {{ 'FOOTER.TOP' | translate }}
+      </a>
+    </div>
+  </div>
+</footer>

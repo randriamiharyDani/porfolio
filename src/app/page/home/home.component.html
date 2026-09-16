@@ -1,37 +1,9 @@
-<div class="container-fluid">
-
-  <div class="translate w-full h-7 bg-slate-600 fixed z-40 mt-0">
-      <div class="traduction flex flex-row-reverse mx-2">
-        <button
-          class="language-btn bg-green-500 text-white px-2 mx-1 py-1 my-1 text-xs rounded-lg font-semibold transition-transform transform hover:scale-105 hover:bg-green-600"
-          (click)="switchLanguage('en')">En</button>
-        <button
-          class="language-btn bg-red-500 text-white px-2 py-1 my-1 text-xs rounded-lg font-semibold transition-transform transform hover:scale-105 hover:bg-red-600 "
-          (click)="switchLanguage('fr')">Fr</button>
-      </div>
-  </div>
-
-  <div class="navbar ">
-    <app-nav-bar></app-nav-bar>
-  </div>
-  <div id="accueil">
-    <app-accueil></app-accueil>
-  </div>
-  <div class="about justify-center content-center ">
-    <app-profile></app-profile>
-  </div>
-  <div id="Compétences" class="competence d:flex row justify-center content-center">
-    <app-competence></app-competence>
-  </div>
-
-  <!-- <div class="projects">
-    <app-project></app-project>
-  </div> -->
-
-  <div class="slide">
-    <app-slide></app-slide>
-  </div>
-  <div id="Contact" class="contact-footer ">
-    <app-footer></app-footer>
-  </div>
+<div class="min-h-screen overflow-x-hidden bg-night-950 text-slate-200">
+  <app-nav-bar></app-nav-bar>
+  <app-accueil></app-accueil>
+  <app-profile></app-profile>
+  <app-competence></app-competence>
+  <app-project></app-project>
+  <app-slide></app-slide>
+  <app-footer></app-footer>
 </div>

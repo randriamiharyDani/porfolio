@@ -1,17 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile',
-  imports: [TranslateModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss'
+  styleUrl: './profile.component.scss',
 })
 export class ProfileComponent {
+  stats = [
+    { value: '4+', key: 'PROFIL.STAT1' },
+    { value: '8+', key: 'PROFIL.STAT2' },
+    { value: '2+', key: 'PROFIL.STAT3' },
+    { value: '5+', key: 'PROFIL.STAT4' },
+  ];
 
-  profileParagraphe = ` Je suis un développeur web junior passionné par la technologie et le développement logiciel.
-   Spécialisé en Angular et Laravel, j'ai acquis des compétences solides dans la création d'applications web modernes et dynamiques. Bien que je sois au début de ma carrière, j'ai une grande volonté d'apprendre et de contribuer à des projets concrets.
-   Mon objectif est de perfectionner mes compétences techniques tout en apportant une valeur ajoutée aux équipes avec lesquelles je collabore.` ;
-
-
+  points = ['PROFIL.POINT1', 'PROFIL.POINT2', 'PROFIL.POINT3', 'PROFIL.POINT4'];
 }

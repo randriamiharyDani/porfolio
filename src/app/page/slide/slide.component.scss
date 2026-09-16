@@ -1,55 +1,10 @@
-.container
-{
+.texte {
   display: inline-block;
-}
-.texte{
-  // font-size: 5em;
-  letter-spacing: 5px;
-  font-family: monospace;
-  border-right: 5px solid;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  animation :
-  typing 2s steps(5),
-  cursor .6s step-end infinite alternate;
-}
-//cursor blinking
-
-@keyframes cursor
-{
- 50%{ border-color: transparent }
-}
-
-// tiping effect
-
-@keyframes typing
-{
-  from { width: 0 }
-  to { width: 100% }
-}
-
-// .slide{
-//   background-image: url('/assets/cta01.jpg');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   transition: background-position 0.5s;
-// }
-// responsive
-@media screen and (max-width: 600px) {
-  .texte {
-    font-size: 15px;
-    line-height: 1.4;
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-  }
-
-  .container {
-    display: block;
-
-    max-width: 100%;
-    padding: 10px;
-  }
+  background: linear-gradient(90deg, #ffffff, #a5f3fc, #c4b5fd);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient-x 5s ease infinite;
+  letter-spacing: 1px;
 }

@@ -1,27 +1,17 @@
-.trace{
-   border-right: 1px solid;
-  height: 100%;
-}
-h3
-{
-  text-decoration: underline;
-  text-decoration-color: white;
-  gap: 5px;
-}
-.title{
-  text-transform: uppercase;
-  font-size: 35px;
-  -webkit-text-stroke: 2px #0ef;
-  color: transparent;
+.bar-fill {
+  width: 0;
+  transition: width 1s cubic-bezier(0.22, 0.61, 0.36, 1) 0.25s;
 }
 
-.lien {
-  transition: color 0.3s ease;
+.reveal.visible .bar-fill {
+  width: var(--level);
 }
 
-.lien:hover {
-  text-decoration: underline;
+.ring {
+  stroke-dashoffset: 220;
+  transition: stroke-dashoffset 1.4s cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s;
 }
-.parenthese {
-  font-size: 15px;
+
+.reveal.visible .ring {
+  stroke-dashoffset: var(--offset);
 }
