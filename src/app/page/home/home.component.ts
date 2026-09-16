@@ -6,6 +6,7 @@ import { CompetenceComponent } from '../competence/competence.component';
 import { ProjectComponent } from '../project/project.component';
 import { SlideComponent } from '../slide/slide.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ScrollProgressComponent } from '../../shared/scroll-progress.component';
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import { FooterComponent } from '../footer/footer.component';
     ProjectComponent,
     SlideComponent,
     FooterComponent,
+    ScrollProgressComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
