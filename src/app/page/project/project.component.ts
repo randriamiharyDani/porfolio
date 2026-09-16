@@ -22,7 +22,7 @@ export class ProjectComponent {
     {
       title: 'PROJECT.P1_TITLE',
       desc: 'PROJECT.P1_DESC',
-      image: 'assets/portfolio.jpg',
+      image: 'assets/portfolio_dani.JPG',
       tags: ['Angular', 'Tailwind CSS', 'SSR'],
       github: 'https://github.com/randriamiharyDani?tab=repositories',
     },
