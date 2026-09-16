@@ -29,6 +29,10 @@ module.exports = {
           from: { opacity: '0', transform: 'translateY(28px)' },
           to: { opacity: '1', transform: 'none' },
         },
+        'fade-in': {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
         'gradient-x': {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
@@ -47,6 +51,7 @@ module.exports = {
         'float-slow': 'float 9s ease-in-out infinite',
         blob: 'blob 12s ease-in-out infinite',
         'fade-up': 'fade-up .6s ease both',
+        'fade-in': 'fade-in .5s ease both',
         'gradient-x': 'gradient-x 4s ease infinite',
         'pulse-ring': 'pulse-ring 2s ease-out infinite',
         marquee: 'marquee 26s linear infinite',

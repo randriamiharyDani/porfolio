@@ -86,7 +86,12 @@
     "P5_TITLE": "Application Nir'info",
     "P5_DESC": "Développement d'une application web utilisant React Native couplée à une API CodeIgniter 3 pour des fonctionnalités temps réel.",
     "VIEW_CODE": "Voir le code",
-    "DEMO": "Démo"
+    "DEMO": "Démo",
+    "VIEW_SITE": "Voir le site",
+    "P6_TITLE": "Doléance",
+    "P6_DESC": "Plateforme de gestion et de suivi des doléances, construite avec React, Tailwind CSS, Node.js et Express.js.",
+    "P7_TITLE": "MultiService-App",
+    "P7_DESC": "Application mobile multiservices développée avec React Native et une API Laravel pour une gestion centralisée des services."
   },
   "SLIDE": {
     "TITLE": "Actuellement",

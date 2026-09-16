@@ -28,7 +28,7 @@ export class NavBarComponent {
   }
 
   get currentLang(): string {
-    return this.translate.currentLang;
+    return this.translate.currentLang || this.savedLang;
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -40,8 +40,19 @@ export class NavBarComponent {
     this.menuOpen = !this.menuOpen;
   }
 
+  openMenu(): void {
+    this.menuOpen = true;
+  }
+
   closeMenu(): void {
     this.menuOpen = false;
+  }
+
+  @HostListener('document:keydown', ['$event'])
+  onKeydown(event: KeyboardEvent): void {
+    if (event.key === 'Escape') {
+      this.closeMenu();
+    }
   }
 
   switchLanguage(lang: string): void {

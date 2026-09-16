@@ -8,7 +8,7 @@ interface Project {
   image: string;
   tags: string[];
   github?: string;
-  demo?: string;
+  site?: string;
 }
 
 @Component({
@@ -24,31 +24,23 @@ export class ProjectComponent {
       desc: 'PROJECT.P1_DESC',
       image: 'assets/portfolio_dani.JPG',
       tags: ['Angular', 'Tailwind CSS', 'SSR'],
+      site: 'https://example.com/portfolio',
       github: 'https://github.com/randriamiharyDani?tab=repositories',
     },
     {
-      title: 'PROJECT.P2_TITLE',
-      desc: 'PROJECT.P2_DESC',
-      image: 'assets/couverture.jpg',
-      tags: ['Angular', 'Laravel'],
+      title: 'PROJECT.P6_TITLE',
+      desc: 'PROJECT.P6_DESC',
+      image: 'assets/doleance.JPG',
+      tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js'],
+      site: 'https://example.com/doleance',
+      github: 'https://github.com/randriamiharyDani?tab=repositories',
     },
     {
-      title: 'PROJECT.P3_TITLE',
-      desc: 'PROJECT.P3_DESC',
-      image: 'assets/cta01.jpg',
-      tags: ['Angular', 'Laravel', 'APIs REST'],
-    },
-    {
-      title: 'PROJECT.P4_TITLE',
-      desc: 'PROJECT.P4_DESC',
-      image: 'assets/phone.png',
-      tags: ['HTML', 'CSS', 'JavaScript'],
-    },
-    {
-      title: 'PROJECT.P5_TITLE',
-      desc: 'PROJECT.P5_DESC',
-      image: 'assets/boys.png',
-      tags: ['React Native', 'CodeIgniter', 'API'],
+      title: 'PROJECT.P7_TITLE',
+      desc: 'PROJECT.P7_DESC',
+      image: 'assets/app-multiservice.jpeg',
+      tags: ['React Native', 'Laravel API'],
+      site: 'https://example.com/multiservice',
     },
   ];
 }
