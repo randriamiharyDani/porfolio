@@ -13,11 +13,8 @@
 
     <!-- Desktop / tablet menu -->
     <div class="hidden items-center gap-1 md:flex">
-      <a href="#accueil" (click)="closeMenu()" class="nav-link">{{ 'NAV.HOME' | translate }}</a>
-      <a href="#profil" (click)="closeMenu()" class="nav-link">{{ 'NAV.ABOUT' | translate }}</a>
-      <a href="#competences" (click)="closeMenu()" class="nav-link">{{ 'NAV.SKILLS' | translate }}</a>
-      <a href="#projets" (click)="closeMenu()" class="nav-link">{{ 'NAV.PROJECTS' | translate }}</a>
-      <a href="#contact" (click)="closeMenu()" class="nav-link">{{ 'NAV.CONTACT' | translate }}</a>
+      <a *ngFor="let link of navLinks" [href]="link.href" (click)="closeMenu()" [attr.aria-current]="activeSection === link.href.slice(1) ? 'page' : null"
+        class="nav-link" [ngClass]="{ 'nav-link-active': activeSection === link.href.slice(1) }">{{ link.label | translate }}</a>
     </div>
 
     <div class="flex items-center gap-2 sm:gap-3">
@@ -54,11 +51,8 @@
   <div [ngClass]="menuOpen ? 'pointer-events-auto max-h-[80vh] opacity-100 overflow-y-auto' : 'pointer-events-none max-h-0 opacity-0 overflow-hidden'"
     class="transition-all duration-500 md:hidden">
     <div class="mx-4 my-3 flex flex-col gap-1 rounded-2xl border border-white/10 bg-night-900/95 p-4 shadow-xl shadow-black/40 backdrop-blur-xl">
-      <a href="#accueil" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.HOME' | translate }}</a>
-      <a href="#profil" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.ABOUT' | translate }}</a>
-      <a href="#competences" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.SKILLS' | translate }}</a>
-      <a href="#projets" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.PROJECTS' | translate }}</a>
-      <a href="#contact" (click)="closeMenu()" class="nav-link-mobile">{{ 'NAV.CONTACT' | translate }}</a>
+      <a *ngFor="let link of navLinks" [href]="link.href" (click)="closeMenu()" [attr.aria-current]="activeSection === link.href.slice(1) ? 'page' : null"
+        class="nav-link-mobile" [ngClass]="{ 'nav-link-mobile-active': activeSection === link.href.slice(1) }">{{ link.label | translate }}</a>
       <a href="#contact" (click)="closeMenu()"
         class="mt-2 rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 px-4 py-3 text-center font-semibold text-white">
         {{ 'NAV.HIRE' | translate }}
