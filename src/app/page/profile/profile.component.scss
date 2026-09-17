@@ -1,5 +1,131 @@
-@media (max-width: 639px) {
-  .image {
-    display: none;
+.orbit-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 520px;
+  height: 520px;
+
+  @media (max-width: 639px) {
+    transform: scale(0.6);
+    margin: -90px 0;
+  }
+
+  &:hover {
+    .orbit-ring,
+    .logo-counter {
+      animation-play-state: paused;
+    }
+  }
+}
+
+.orbit-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.07);
+}
+
+.orbit-ring-1 {
+  animation: orbit-spin 25s linear infinite;
+}
+
+.orbit-ring-2 {
+  animation: orbit-spin 35s linear infinite reverse;
+}
+
+@keyframes orbit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.logo-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-ring-1 .logo-counter {
+  animation: counter-spin-cw 25s linear infinite;
+}
+
+.orbit-ring-2 .logo-counter {
+  animation: counter-spin-ccw 35s linear infinite;
+}
+
+@keyframes counter-spin-cw {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes counter-spin-ccw {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin: -26px 0 0 -26px;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  padding: 10px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    transform: scale(1.2);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+  }
+}
+
+.logo-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.photo-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 4px;
+  animation: photo-pulse 4s ease-in-out infinite alternate;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes photo-pulse {
+  from {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.15), 0 0 60px rgba(139, 92, 246, 0.1);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.3), 0 0 80px rgba(139, 92, 246, 0.2);
   }
 }

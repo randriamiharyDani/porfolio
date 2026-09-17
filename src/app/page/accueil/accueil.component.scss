@@ -36,6 +36,18 @@
   }
 }
 
+.hero-photo {
+  display: block;
+  width: min(100%, 340px);
+  height: auto;
+  border-radius: 1.5rem;
+
+  @media (min-width: 640px) {
+    width: min(100%, 440px);
+    border-radius: 1.75rem;
+  }
+}
+
 @media (max-width: 640px) {
   .social-btn {
     @apply h-10 w-10;

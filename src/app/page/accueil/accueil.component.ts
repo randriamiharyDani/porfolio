@@ -9,7 +9,7 @@ import { CosmosComponent } from '../cosmos/cosmos.component';
   styleUrl: './accueil.component.scss',
 })
 export class AccueilComponent implements OnInit, OnDestroy {
-  imagePath = '/assets/profile.jpg';
+  imagePath = '/assets/hello.jpeg';
 
   roles = ['ACCUEIL.ROLE1', 'ACCUEIL.ROLE2', 'ACCUEIL.ROLE3'];
   typedText = '';
