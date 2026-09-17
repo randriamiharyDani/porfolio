@@ -38,7 +38,7 @@ export class ProjectComponent {
     {
       title: 'PROJECT.P7_TITLE',
       desc: 'PROJECT.P7_DESC',
-      image: 'assets/app-multiservice.jpeg',
+      image: 'assets/multiservice-app.jpg',
       tags: ['React Native', 'Laravel API'],
       site: 'https://example.com/multiservice',
     },
