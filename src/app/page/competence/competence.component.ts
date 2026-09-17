@@ -29,6 +29,7 @@ export class CompetenceComponent {
         { name: 'HTML5', level: 90 },
         { name: 'CSS / SCSS', level: 80 },
         { name: 'TypeScript', level: 70 },
+        { name: 'React', level: 65 },
       ],
     },
     {
@@ -39,6 +40,8 @@ export class CompetenceComponent {
         { name: 'PHP', level: 65 },
         { name: 'CodeIgniter', level: 70 },
         { name: 'APIs REST', level: 80 },
+        { name: 'Node.js', level: 65 },
+        { name: 'Express.js', level: 60 },
       ],
     },
     {
@@ -57,6 +60,7 @@ export class CompetenceComponent {
         { name: 'Tailwind CSS', level: 80 },
         { name: 'JQuery', level: 60 },
         { name: 'MySQL / SQL', level: 70 },
+        { name: 'Docker', level: 55 },
       ],
     },
   ];
@@ -82,7 +86,7 @@ export class CompetenceComponent {
       role: 'Développeur Full-Stack',
       period: 'TRAINNING.TASK_DESC0',
       text: 'TRAINNING.TASK_DESC1',
-      tags: ['Angular', 'Laravel'],
+      tags: ['Angular', 'Laravel', 'Node.js', 'Express.js', 'React'],
     },
     {
       org: 'ProDéCID / GIZ',
