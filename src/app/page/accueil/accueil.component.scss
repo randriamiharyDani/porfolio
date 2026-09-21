@@ -48,8 +48,14 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   .social-btn {
     @apply h-10 w-10;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-photo {
+    width: min(100%, 280px);
   }
 }

@@ -103,3 +103,11 @@ h1, h2, h3, h4, h5, .font-display {
     transform: none !important;
   }
 }
+
+@keyframes wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(14deg); }
+  30% { transform: rotate(-8deg); }
+  45% { transform: rotate(14deg); }
+}
+.animate-wave { animation: wave 2.6s ease-in-out infinite; }

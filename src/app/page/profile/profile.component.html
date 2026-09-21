@@ -10,11 +10,11 @@
 
         <div class="orbit-ring orbit-ring-1">
           <div *ngFor="let logo of orbit1; let i = index; trackBy: trackByName" class="logo-node"
-               [style.transform]="'rotate(' + (360 / orbit1.length * i) + 'deg) translateY(-160px)'">
+               [style.transform]="'rotate(' + (360 / orbit1.length * i) + 'deg) translateY(-190px)'">
             <div class="logo-counter">
               <div class="logo-face group" [title]="logo.label">
-                <img [src]="logo.logo" [alt]="logo.label" class="logo-icon transition-transform duration-300 group-hover:scale-125"
-                     loading="lazy" width="32" height="32" />
+                <img [src]="logo.logo" [alt]="logo.label" class="logo-icon transition-transform duration-300 group-hover:scale-110"
+                     loading="lazy" width="56" height="56" />
               </div>
             </div>
           </div>
@@ -22,11 +22,11 @@
 
         <div class="orbit-ring orbit-ring-2">
           <div *ngFor="let logo of orbit2; let i = index; trackBy: trackByName" class="logo-node"
-               [style.transform]="'rotate(' + (360 / orbit2.length * i) + 'deg) translateY(-215px)'">
+               [style.transform]="'rotate(' + (360 / orbit2.length * i) + 'deg) translateY(-250px)'">
             <div class="logo-counter">
-              <div class="logo-face group" [title]="logo.label">
-                <img [src]="logo.logo" [alt]="logo.label" class="logo-icon transition-transform duration-300 group-hover:scale-125"
-                     loading="lazy" width="30" height="30" />
+              <div class="logo-face logo-face--sm group" [title]="logo.label">
+                <img [src]="logo.logo" [alt]="logo.label" class="logo-icon transition-transform duration-300 group-hover:scale-110"
+                     loading="lazy" width="48" height="48" />
               </div>
             </div>
           </div>
