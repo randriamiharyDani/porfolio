@@ -13,7 +13,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class FooterComponent {
   email = 'randriamiharysteev@gmail.com';
   phone = '+261 34 72 139 93';
-  address = 'Lot II T5 CA Betongolo';
+  address = 'Lot ITS 22 Ter C Andranonahoatra Itaosy';
   year = new Date().getFullYear();
 
   form: FormGroup;
