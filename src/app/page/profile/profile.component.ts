@@ -27,7 +27,7 @@ export class ProfileComponent {
   orbit1: TechLogo[] = [
     { name: 'html5', label: 'HTML5', logo: 'assets/logos/html5.svg' },
     { name: 'css3', label: 'CSS3', logo: 'assets/logos/css3.svg' },
-    { name: 'javascript', label: 'JavaScript', logo: 'assets/js.png' },
+    { name: 'javascript', label: 'JavaScript', logo: 'assets/logos/javascript.svg' },
     { name: 'python', label: 'Python', logo: 'assets/logos/python.svg' },
     { name: 'mysql', label: 'MySQL', logo: 'assets/logos/mysql.svg' },
     { name: 'angular', label: 'Angular', logo: 'assets/logos/angular.svg' },
