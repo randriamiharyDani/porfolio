@@ -10,7 +10,7 @@
 
         <div class="orbit-ring orbit-ring-1">
           <div *ngFor="let logo of orbit1; let i = index; trackBy: trackByName" class="logo-node"
-               [style.transform]="'rotate(' + (360 / orbit1.length * i) + 'deg) translateY(-172px)'">
+               [style.transform]="'rotate(' + (360 / orbit1.length * i) + 'deg) translateY(var(--orbit-radius-1))'">
             <div class="logo-counter">
               <div class="logo-face" [title]="logo.label">
                 <img [src]="logo.logo" [alt]="logo.label" class="logo-icon"
@@ -22,7 +22,7 @@
 
         <div class="orbit-ring orbit-ring-2">
           <div *ngFor="let logo of orbit2; let i = index; trackBy: trackByName" class="logo-node"
-               [style.transform]="'rotate(' + (360 / orbit2.length * i) + 'deg) translateY(-274px)'">
+               [style.transform]="'rotate(' + (360 / orbit2.length * i) + 'deg) translateY(var(--orbit-radius-2))'">
             <div class="logo-counter">
               <div class="logo-face logo-face--sm" [title]="logo.label">
                 <img [src]="logo.logo" [alt]="logo.label" class="logo-icon"

@@ -55,7 +55,13 @@
 }
 
 @media (max-width: 380px) {
-  .hero-photo {
+.scroll-indicator {
+  @media (max-height: 560px) {
+    display: none;
+  }
+}
+
+.hero-photo {
     width: min(100%, 280px);
   }
 }

@@ -1,32 +1,21 @@
 .orbit-container {
+  --orbit-diameter: min(82vw, 600px);
+  --orbit-radius-1: calc(var(--orbit-diameter) * -0.287);
+  --orbit-radius-2: calc(var(--orbit-diameter) * -0.457);
+  --logo-size-1: calc(var(--orbit-diameter) * 0.167);
+  --logo-size-2: calc(var(--orbit-diameter) * 0.147);
+  --logo-half-1: calc(var(--logo-size-1) / 2);
+  --logo-half-2: calc(var(--logo-size-2) / 2);
+
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 600px;
-  height: 600px;
+  width: var(--orbit-diameter);
+  height: var(--orbit-diameter);
+  max-width: 100%;
   transform-origin: center;
   will-change: transform;
-
-  @media (max-width: 639px) {
-    transform: scale(0.58);
-    margin: -113px 0;
-  }
-
-  @media (max-width: 520px) {
-    transform: scale(0.5);
-    margin: -138px 0;
-  }
-
-  @media (max-width: 400px) {
-    transform: scale(0.46);
-    margin: -151px 0;
-  }
-
-  @media (max-width: 359px) {
-    transform: scale(0.4);
-    margin: -171px 0;
-  }
 
   &:hover {
     .orbit-ring,
@@ -95,9 +84,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
-  margin: -50px 0 0 -50px;
+  width: var(--logo-size-1);
+  height: var(--logo-size-1);
+  margin: calc(var(--logo-half-1) * -1) 0 0 calc(var(--logo-half-1) * -1);
   background: none;
   border: 0;
   padding: 0;
@@ -109,9 +98,9 @@
   }
 
   &--sm {
-    width: 88px;
-    height: 88px;
-    margin: -44px 0 0 -44px;
+    width: var(--logo-size-2);
+    height: var(--logo-size-2);
+    margin: calc(var(--logo-half-2) * -1) 0 0 calc(var(--logo-half-2) * -1);
   }
 }
 
@@ -152,8 +141,8 @@
 .photo-wrapper {
   position: relative;
   z-index: 10;
-  width: 230px;
-  height: 230px;
+  width: calc(var(--orbit-diameter) * 0.383);
+  height: calc(var(--orbit-diameter) * 0.383);
   border-radius: 50%;
   overflow: hidden;
   padding: 4px;
